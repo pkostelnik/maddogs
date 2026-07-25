@@ -1,4 +1,10 @@
 @layer components {
+  /* Lesebreite fuer Formulare, aber linksbuendig zur uebrigen Seite –
+     eine zentrierte Spalte wuerde die Fluchtlinie brechen. */
+  .form-column {
+    max-inline-size: 44rem;
+  }
+
   /* ---------------------------------------------------------------- Formular */
   .form {
     display: grid;
@@ -193,6 +199,8 @@
   }
 
   .gallery--strip {
+    /* Als fokussierbare Region: sichtbarer Ring beim Tabben. */
+    scroll-padding-inline: var(--wrap-gutter);
     grid-auto-flow: column;
     grid-auto-columns: min(72vw, 18rem);
     grid-template-columns: none;

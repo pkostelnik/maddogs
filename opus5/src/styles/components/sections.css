@@ -115,7 +115,8 @@
     position: relative;
     isolation: isolate;
     padding-block: calc(var(--space-8) + var(--space-4)) var(--space-8);
-    background: var(--c-bg-deep);
+    /* Fest dunkel, unabhaengig vom Theme: die Textfarben oben sind hell. */
+    background: var(--neutral-1000);
     border-block-end: var(--border-hairline);
     overflow: hidden;
   }
@@ -143,6 +144,8 @@
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+    /* Motive sitzen meist im oberen Drittel. */
+    object-position: 50% 28%;
   }
 
   .page-head__inner {
@@ -470,6 +473,14 @@
     padding: 0 var(--space-5) var(--space-5);
     color: var(--c-text-muted);
     max-inline-size: 68ch;
+  }
+
+  /* Der Hinweisblock ist bereits ember-getoent; das Badge darin braucht
+     deshalb eine deckende Flaeche statt einer zweiten Lasur. */
+  .draft-note .badge--draft {
+    background: var(--ember-600);
+    border-color: var(--ember-600);
+    color: #fff;
   }
 
   /* ---------------------------------------------------------------- Banner */

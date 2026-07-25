@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!--#include file="src/partials/head.html" {
+      "title": "Trainingsangebote",
+      "description": "Dogwalking, Man- und Pet-Trail, Spürhunde und Sporthunde bei Mad Dogs Germany in Niederkassel. Vier Wege, deinen Hund auszulasten.",
+      "path": "/training/"
+    } -->
+  </head>
+
+  <body>
+    <!--#include file="src/partials/header.html" -->
+
+    <main id="main">
+      <section class="page-head page-head--media" aria-labelledby="page-title">
+        <div class="page-head__bg">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                /src/assets/images/hund-geschirr-einsatz-480.avif   480w,
+                /src/assets/images/hund-geschirr-einsatz-800.avif   800w,
+                /src/assets/images/hund-geschirr-einsatz-1500.avif 1500w
+              "
+              sizes="100vw"
+            />
+            <img
+              src="/src/assets/images/hund-geschirr-einsatz.jpg"
+              width="1500"
+              height="2000"
+              alt=""
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+
+        <div class="wrap">
+          <div class="page-head__inner">
+            <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+              <ol>
+                <li><a href="/">Start</a></li>
+                <li><span aria-current="page">Training</span></li>
+              </ol>
+            </nav>
+            <h1 id="page-title">Training</h1>
+            <p class="lead" style="color: inherit; opacity: 0.85">
+              Vier Angebote, ein Prinzip: Der Hund bekommt eine Aufgabe, du
+              bekommst die Werkzeuge dazu. Alles einzeln buchbar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="offers-title">
+        <div class="wrap">
+          <div class="section__head">
+            <p class="eyebrow">Übersicht</p>
+            <h2 id="offers-title">Welches Angebot passt zu euch?</h2>
+            <p class="text-muted">
+              Wenn du unsicher bist: Schreib mir kurz, was aktuell schwierig ist.
+              In den meisten Fällen ergibt sich die Antwort im Gespräch.
+            </p>
+          </div>
+
+          <div class="two-col-list" data-reveal-group>
+            <article class="service-hub-card" data-reveal>
+              <div class="service-hub-card__media">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="
+                      /src/assets/images/chris-fuehrt-malinois-480.avif 480w,
+                      /src/assets/images/chris-fuehrt-malinois-800.avif 800w
+                    "
+                    sizes="(min-width: 44rem) 45vw, 100vw"
+                  />
+                  <img
+                    src="/src/assets/images/chris-fuehrt-malinois.jpg"
+                    width="1333"
+                    height="2000"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Chris führt einen Malinois an lockerer Leine"
+                  />
+                </picture>
+              </div>
+              <p class="card__index">01 — Kernangebot</p>
+              <h3><a class="card__link" href="/training/dogwalking/">Dogwalking</a></h3>
+              <p class="card__text">
+                Regelmäßiger Gassi-Service in kleinen Gruppen. Für Hunde, die
+                mehr brauchen als eine Runde um den Block: klare Führung,
+                Reizkontrolle unterwegs, gezielte Auslastung.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Gruppen mit maximal 10 Hunden</li>
+                <li>Abholung im Einzugsgebiet</li>
+                <li>Rückmeldung nach jeder Runde</li>
+              </ul>
+              <p class="card__foot"><span class="badge badge--accent">ab 20 € / Stunde</span></p>
+            </article>
+
+            <article class="service-hub-card" data-reveal>
+              <div class="service-hub-card__media">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="
+                      /src/assets/images/malinois-wald-fels-480.avif 480w,
+                      /src/assets/images/malinois-wald-fels-800.avif 800w
+                    "
+                    sizes="(min-width: 44rem) 45vw, 100vw"
+                  />
+                  <img
+                    src="/src/assets/images/malinois-wald-fels.jpg"
+                    width="1428"
+                    height="2000"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Malinois auf einem Felsen im Wald"
+                  />
+                </picture>
+              </div>
+              <p class="card__index">02</p>
+              <h3><a class="card__link" href="/training/man-pet-trail/">Man &amp; Pet Trail</a></h3>
+              <p class="card__text">
+                Personen- und Tiersuche über die individuelle Geruchsspur. Der
+                Hund arbeitet konzentriert, du lernst, seine Körpersprache zu
+                lesen. Ausgesprochen wirksam gegen Unterforderung.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Ausbildung bei Pet Trailern in Österreich</li>
+                <li>Einzeltermine, kein Gruppenzwang</li>
+              </ul>
+              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
+            </article>
+
+            <article class="service-hub-card" data-reveal>
+              <p class="card__index">03</p>
+              <h3><a class="card__link" href="/training/spuerhunde/">Spürhunde</a></h3>
+              <p class="card__text">
+                Geruchsdifferenzierung, Anzeigeverhalten, Aufbau über positive
+                Verstärkung. Der Einstieg in echte Detektionsarbeit – für Teams,
+                die es genau wissen wollen.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Erfahrung aus dem zivilen und militärischen Diensthundebereich</li>
+                <li>Aufbau in klaren, überprüfbaren Stufen</li>
+              </ul>
+              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
+            </article>
+
+            <article class="service-hub-card" data-reveal>
+              <p class="card__index">04</p>
+              <h3><a class="card__link" href="/training/sporthunde/">Sporthunde</a></h3>
+              <p class="card__text">
+                Turnierhundesport von Grund auf: Geländelauf, Vierkampf,
+                Hindernislauf. Aus über 70 eigenen Turnierstarts weiß ich, wo
+                Teams typischerweise Zeit liegen lassen.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Vizemeister DM GL 2000 (2017)</li>
+                <li>Technik, Kondition und Prüfungsvorbereitung</li>
+              </ul>
+              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="approach-title">
+        <div class="wrap">
+          <div class="section__head">
+            <p class="eyebrow">Arbeitsweise</p>
+            <h2 id="approach-title">Wie ein Training bei mir abläuft</h2>
+          </div>
+
+          <ol class="steps" data-reveal-group>
+            <li data-reveal>
+              <div>
+                <h3>Kennenlernen</h3>
+                <p>
+                  Kurzes Gespräch am Telefon oder per WhatsApp: Rasse, Alter,
+                  Vorgeschichte, was aktuell nicht funktioniert. Danach weiß ich,
+                  ob ich der Richtige bin – und sage es auch, wenn nicht.
+                </p>
+              </div>
+            </li>
+            <li data-reveal>
+              <div>
+                <h3>Proberunde</h3>
+                <p>
+                  Wir gehen gemeinsam eine Runde. Ich sehe deinen Hund in Aktion,
+                  du siehst meine Arbeitsweise. Ohne Verpflichtung.
+                </p>
+              </div>
+            </li>
+            <li data-reveal>
+              <div>
+                <h3>Plan</h3>
+                <p>
+                  Wir legen fest, woran wir arbeiten und woran du erkennst, dass es
+                  wirkt. Konkrete Ziele statt vager Versprechen.
+                </p>
+              </div>
+            </li>
+            <li data-reveal>
+              <div>
+                <h3>Umsetzung</h3>
+                <p>
+                  Regelmäßige Termine, nach jeder Einheit eine ehrliche
+                  Rückmeldung – auch dann, wenn etwas nicht rundläuft.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!--#include file="src/partials/cta-band.html" {
+        "title": "Unsicher, was passt?",
+        "text": "Erzähl mir kurz von deinem Hund. Ich sage dir ehrlich, welches Angebot sinnvoll ist – und ob überhaupt eines davon."
+      } -->
+    </main>
+
+    <!--#include file="src/partials/footer.html" -->
+  </body>
+</html>

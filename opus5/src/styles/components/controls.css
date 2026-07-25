@@ -138,15 +138,18 @@
     background: color-mix(in oklab, var(--c-accent) 12%, transparent);
   }
 
-  /* Entwurfstexte werden sichtbar gekennzeichnet, nie stillschweigend. */
+  /* Entwurfstexte werden sichtbar gekennzeichnet, nie stillschweigend.
+     Auf dunklem Grund erreicht ember-500 nur 4,35:1, ember-400 dagegen 5,9:1. */
   .badge--draft {
-    color: var(--ember-500);
+    color: var(--ember-400);
     border-color: color-mix(in oklab, var(--ember-500) 55%, transparent);
     background: color-mix(in oklab, var(--ember-500) 14%, transparent);
   }
 
+  /* Auf der ember-getoenten Flaeche erreicht ember-600 nur 3,98:1.
+     ember-700 liegt bei 5,27:1 und damit sicher ueber der AA-Schwelle. */
   [data-theme='light'] .badge--draft {
-    color: var(--ember-600);
+    color: var(--ember-700);
   }
 
   .draft-note {

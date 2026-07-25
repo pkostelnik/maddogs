@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!--#include file="src/partials/head.html" {
+      "title": "Kontakt",
+      "description": "Kontakt zu Mad Dogs Germany in Niederkassel: per WhatsApp, Telefon 0173 3649143 oder E-Mail. Proberunde unverbindlich vereinbaren.",
+      "path": "/kontakt/"
+    } -->
+  </head>
+
+  <body>
+    <!--#include file="src/partials/header.html" -->
+
+    <main id="main">
+      <section class="page-head" aria-labelledby="page-title">
+        <div class="wrap">
+          <div class="page-head__inner">
+            <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+              <ol>
+                <li><a href="/">Start</a></li>
+                <li><span aria-current="page">Kontakt</span></li>
+              </ol>
+            </nav>
+            <h1 id="page-title">Kontakt</h1>
+            <p class="lead" style="color: inherit; opacity: 0.85">
+              Schreib mir, was dein Hund braucht. Am schnellsten geht es per
+              WhatsApp oder Anruf.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="form-title">
+        <div class="wrap">
+          <div class="form-column">
+            <p class="draft-note" style="margin-block-end: var(--space-7)">
+              <span class="badge badge--draft">Prototyp</span>
+              <span>
+                <strong>Dieses Formular versendet nichts.</strong>
+                Der Prototyp hat kein Backend. Die Eingaben werden im Browser
+                geprüft, danach aber weder gespeichert noch übertragen. Nutze für
+                eine echte Anfrage bitte WhatsApp, Telefon oder E-Mail.
+              </span>
+            </p>
+
+            <div class="section__head">
+              <div class="stack">
+                <p class="eyebrow">Anfrage</p>
+                <h2 id="form-title">Erzähl mir von deinem Hund</h2>
+                <p class="text-muted">
+                  Je mehr ich vorab weiß, desto konkreter kann ich antworten.
+                  Felder mit Stern sind Pflichtfelder.
+                </p>
+              </div>
+            </div>
+
+            <form class="form" data-contact-form action="#" method="post">
+              <p
+                class="form__status"
+                data-form-status
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <div class="form__row form__row--2">
+                <div class="field">
+                  <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    aria-describedby="name-error"
+                  />
+                  <p class="field__error" id="name-error"></p>
+                </div>
+
+                <div class="field">
+                  <label for="email">E-Mail <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <p class="field__error" id="email-error"></p>
+                </div>
+              </div>
+
+              <div class="form__row form__row--2">
+                <div class="field">
+                  <label for="tel">Telefon</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    autocomplete="tel"
+                    aria-describedby="tel-hint tel-error"
+                  />
+                  <p class="field__hint" id="tel-hint">Optional. Für Rückruf oder WhatsApp.</p>
+                  <p class="field__error" id="tel-error"></p>
+                </div>
+
+                <div class="field">
+                  <label for="hund">Hundename und Rasse</label>
+                  <input
+                    type="text"
+                    id="hund"
+                    name="hund"
+                    autocomplete="off"
+                    aria-describedby="hund-hint hund-error"
+                  />
+                  <p class="field__hint" id="hund-hint">Optional, zum Beispiel „Enzo, Malinois, 3 Jahre“.</p>
+                  <p class="field__error" id="hund-error"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="nachricht">Nachricht <span class="req" aria-hidden="true">*</span></label>
+                <textarea
+                  id="nachricht"
+                  name="nachricht"
+                  rows="6"
+                  minlength="20"
+                  required
+                  aria-describedby="nachricht-hint nachricht-error"
+                ></textarea>
+                <p class="field__hint" id="nachricht-hint">
+                  Mindestens 20 Zeichen. Was läuft gut, was ist schwierig, was
+                  soll sich ändern?
+                </p>
+                <p class="field__error" id="nachricht-error"></p>
+              </div>
+
+              <div class="field field--check">
+                <input
+                  type="checkbox"
+                  id="einwilligung"
+                  name="einwilligung"
+                  required
+                  aria-describedby="einwilligung-error"
+                />
+                <label for="einwilligung">
+                  Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung
+                  meiner Anfrage verarbeitet werden. Weitere Hinweise in der
+                  <a href="/datenschutz/">Datenschutzerklärung</a>.
+                  <span class="req" aria-hidden="true">*</span>
+                </label>
+                <p class="field__error" id="einwilligung-error"></p>
+              </div>
+
+              <div class="field hp-field">
+                <label for="website">Bitte dieses Feld leer lassen</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  data-honeypot
+                  autocomplete="off"
+                  tabindex="-1"
+                />
+              </div>
+
+              <div class="cluster">
+                <button class="btn btn--ember btn--lg" type="submit">Anfrage prüfen</button>
+                <span class="text-muted" style="font-size: var(--step--2)">
+                  Im Prototyp wird nichts versendet.
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="direct-title">
+        <div class="wrap">
+          <div class="section__head">
+            <div class="stack">
+              <p class="eyebrow">Direktkontakt</p>
+              <h2 id="direct-title">Schneller geht es so</h2>
+              <p class="text-muted">
+                Antwort meist noch am selben Tag. Wenn ich unterwegs mit Hunden
+                bin, kann es etwas dauern.
+              </p>
+            </div>
+          </div>
+
+          <ul class="grid-auto" role="list" data-reveal-group>
+            <li class="card" data-reveal>
+              <h3 class="card__title">WhatsApp</h3>
+              <p class="card__text">Der schnellste Weg. Kurze Nachricht reicht.</p>
+              <p class="card__foot">
+                <a class="btn btn--ember" href="https://wa.me/491733649143" rel="noopener">
+                  <span class="ext-hint">Chat öffnen</span>
+                  <span class="visually-hidden">Öffnet WhatsApp, ein externes Angebot</span>
+                </a>
+              </p>
+            </li>
+
+            <li class="card" data-reveal>
+              <h3 class="card__title">Telefon</h3>
+              <p class="card__text">Für alles, was sich besser sprechen als schreiben lässt.</p>
+              <p class="card__foot">
+                <a class="btn btn--ghost" href="tel:+491733649143">0173 3649143</a>
+              </p>
+            </li>
+
+            <li class="card" data-reveal>
+              <h3 class="card__title">E-Mail</h3>
+              <p class="card__text">Für ausführliche Anfragen und Unterlagen.</p>
+              <p class="card__foot">
+                <a class="btn btn--ghost" href="mailto:info@mad-dogs-germany.de">
+                  info@mad-dogs-germany.de
+                </a>
+              </p>
+            </li>
+
+            <li class="card" data-reveal>
+              <h3 class="card__title">Einzugsgebiet</h3>
+              <p class="card__text">
+                Niederkassel und direkte Umgebung. Bei größerer Entfernung frag
+                nach, manchmal lässt es sich einrichten.
+              </p>
+              <p class="card__foot"><span class="badge">Niederkassel</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--#include file="src/partials/cta-band.html" {
+        "title": "Proberunde vereinbaren",
+        "text": "Unverbindlich und kostenlos. Danach weißt du, ob es passt."
+      } -->
+    </main>
+
+    <!--#include file="src/partials/footer.html" -->
+  </body>
+</html>

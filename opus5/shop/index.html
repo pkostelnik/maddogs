@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!--#include file="src/partials/head.html" {
+      "title": "Shop-Übersicht",
+      "description": "Ausrüstung für Arbeits- und Sporthunde: Halsbänder, Leinen, Non Stop Dogwear, Trail-Zubehör, Bücher und Kurse. Bestellung läuft über den externen Shop.",
+      "path": "/shop/"
+    } -->
+  </head>
+
+  <body>
+    <!--#include file="src/partials/header.html" -->
+
+    <main id="main">
+      <section class="page-head" aria-labelledby="page-title">
+        <div class="wrap">
+          <div class="page-head__inner">
+            <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+              <ol>
+                <li><a href="/">Start</a></li>
+                <li><span aria-current="page">Shop</span></li>
+              </ol>
+            </nav>
+            <h1 id="page-title">Shop</h1>
+            <p class="lead">
+              Ausrüstung, die im Alltag mit kräftigen Hunden hält. Hier siehst du,
+              was es gibt. Bestellt wird im externen Shop.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="kategorien-title">
+        <div class="wrap">
+          <p class="shop-note" style="margin-block-end: var(--space-7)">
+            <span class="badge">Vitrine</span>
+            <span>
+              Diese Seite ist eine Übersicht ohne Warenkorb und ohne Kasse. Jeder
+              Kauf-Link führt in den Shop von Mad Dogs Germany bei IONOS
+              eCommerce. Dort siehst du Verfügbarkeit, aktuelle Preise und
+              Versandkosten.
+            </span>
+          </p>
+
+          <div class="section__head section__head--split">
+            <div class="stack">
+              <p class="eyebrow">Sortiment</p>
+              <h2 id="kategorien-title">Zehn Kategorien</h2>
+            </div>
+            <p class="text-muted">
+              Neun Kategorien liegen im eigenen Shop. Bekleidung läuft über einen
+              Spreadshop, weil dort auf Bestellung gedruckt wird.
+            </p>
+          </div>
+
+          <ul class="shop-grid" role="list" data-reveal-group>
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/hund-geschirr-einsatz-480.avif   480w,
+                    /src/assets/images/hund-geschirr-einsatz-800.avif   800w,
+                    /src/assets/images/hund-geschirr-einsatz-1500.avif 1500w
+                  "
+                  sizes="(min-width: 64rem) 50vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/hund-geschirr-einsatz-480.webp   480w,
+                    /src/assets/images/hund-geschirr-einsatz-800.webp   800w,
+                    /src/assets/images/hund-geschirr-einsatz-1500.webp 1500w
+                  "
+                  sizes="(min-width: 64rem) 50vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/hund-geschirr-einsatz.jpg"
+                  width="1500"
+                  height="2000"
+                  alt="Schwarzer Hund mit taktischem Arbeitsgeschirr im Gras"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a class="card__link" href="/shop/halsbaender/">Halsbänder</a>
+              </h3>
+              <p class="tile__meta">
+                Leder, Biothane und Zugstopp. Breite Modelle für kräftige Hunde,
+                leuchtende für dunkle Runden. Diese Kategorie ist hier vollständig
+                ausgebaut.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/malinois-wald-fels-480.avif 480w,
+                    /src/assets/images/malinois-wald-fels-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/malinois-wald-fels-480.webp 480w,
+                    /src/assets/images/malinois-wald-fels-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/malinois-wald-fels.jpg"
+                  width="1428"
+                  height="2000"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Malinois sitzt auf einem bemoosten Felsen im Wald"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Leinen
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Führleinen, Schleppleinen, Umhängeleinen. Längen für Alltag und
+                Suchenarbeit.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-golden-retriever-480.avif 480w,
+                    /src/assets/images/galerie-golden-retriever-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-golden-retriever-480.webp 480w,
+                    /src/assets/images/galerie-golden-retriever-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-golden-retriever.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Golden Retriever blickt im Abendlicht erwartungsvoll nach oben"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  European Pet Pharmacy
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Pflege- und Ergänzungsprodukte. Angaben zu jedem Artikel im Shop.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-mischling-weg-480.avif 480w,
+                    /src/assets/images/galerie-mischling-weg-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-mischling-weg-480.webp 480w,
+                    /src/assets/images/galerie-mischling-weg-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-mischling-weg.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Aufmerksamer Mischling steht auf einem Schotterweg"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Non Stop Dogwear
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Geschirre, Gurte und Ausrüstung der norwegischen Marke.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-pinscher-feld-480.avif 480w,
+                    /src/assets/images/galerie-pinscher-feld-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-pinscher-feld-480.webp 480w,
+                    /src/assets/images/galerie-pinscher-feld-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-pinscher-feld.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Pinscher-Mischling läuft ausgelassen durch ein Sommerfeld"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Trail Zubehör
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Kennzeichnung, Transport und Kleinteile für die Suche.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-weisser-hund-480.avif 480w,
+                    /src/assets/images/galerie-weisser-hund-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-weisser-hund-480.webp 480w,
+                    /src/assets/images/galerie-weisser-hund-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-weisser-hund.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Weißer Hund lacht in die Kamera, dahinter ein weiter Himmel"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Mäntel und Jacken
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Wetterschutz für Hunde, die draußen arbeiten oder schnell auskühlen.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-hund-im-auto-480.avif 480w,
+                    /src/assets/images/galerie-hund-im-auto-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-hund-im-auto-480.webp 480w,
+                    /src/assets/images/galerie-hund-im-auto-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-hund-im-auto.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Malinois liegt entspannt auf dem Beifahrersitz"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Bücher
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Fachliteratur zu Ausbildung, Nasenarbeit und Verhalten.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/galerie-hund-maulkorb-480.avif 480w,
+                    /src/assets/images/galerie-hund-maulkorb-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/galerie-hund-maulkorb-480.webp 480w,
+                    /src/assets/images/galerie-hund-maulkorb-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/galerie-hund-maulkorb.jpg"
+                  width="800"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Hund mit Maulkorb auf einem Feldweg, im Hintergrund ein zweiter Hund"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Sonstiges
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Maulkörbe, Beutel, Kleinkram. Alles, was in keine der anderen
+                Kategorien passt.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/chris-fuehrt-malinois-480.avif 480w,
+                    /src/assets/images/chris-fuehrt-malinois-800.avif 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/chris-fuehrt-malinois-480.webp 480w,
+                    /src/assets/images/chris-fuehrt-malinois-800.webp 800w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/chris-fuehrt-malinois.jpg"
+                  width="1333"
+                  height="2000"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Chris führt einen Malinois an lockerer Leine über eine Straße"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Kurse
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Buchbare Termine und Gutscheine. Was offen ist, steht im Shop.
+              </p>
+            </li>
+
+            <li class="tile" data-reveal>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /src/assets/images/hero-malinois-wiese-640.avif  640w,
+                    /src/assets/images/hero-malinois-wiese-1024.avif 1024w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /src/assets/images/hero-malinois-wiese-640.webp  640w,
+                    /src/assets/images/hero-malinois-wiese-1024.webp 1024w
+                  "
+                  sizes="(min-width: 64rem) 25vw, 100vw"
+                />
+                <img
+                  src="/src/assets/images/hero-malinois-wiese.jpg"
+                  width="2000"
+                  height="1328"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Malinois liegt aufmerksam in einer blühenden Sommerwiese"
+                />
+              </picture>
+              <h3 class="tile__title">
+                <a
+                  class="card__link ext-hint"
+                  href="https://mad-dogs-germany.myspreadshop.de/"
+                  rel="noopener"
+                >
+                  Bekleidung
+                  <span class="visually-hidden">– öffnet den externen Spreadshop</span>
+                </a>
+              </h3>
+              <p class="tile__meta">
+                Shirts, Hoodies und Caps mit Mad-Dogs-Motiven. Läuft über einen
+                eigenen Spreadshop mit eigener Bestellabwicklung.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="bestellen-title">
+        <div class="wrap">
+          <div class="split">
+            <div class="stack" data-reveal>
+              <p class="eyebrow">Bestellweg</p>
+              <h2 id="bestellen-title">Wie du bestellst</h2>
+              <p>
+                Der Shop liegt auf einer eigenen Plattform. Warenkorb, Zahlung und
+                Versand laufen dort. Diese Seite zeigt nur, was es gibt, und
+                erklärt, wofür es gedacht ist.
+              </p>
+              <p class="text-muted">
+                Wenn du nicht sicher bist, welche Größe oder welches Material zu
+                deinem Hund passt, frag vorher. Das spart Rücksendungen.
+              </p>
+              <div class="cluster">
+                <a
+                  class="btn btn--ember ext-hint"
+                  href="https://www.mad-dogs-germany.de/mad-dogs-shop-/"
+                  rel="noopener"
+                >
+                  Zum Shop
+                  <span class="visually-hidden">– öffnet den externen Shop</span>
+                </a>
+                <a class="btn btn--ghost" href="/kontakt/">Beratung anfragen</a>
+              </div>
+            </div>
+
+            <div class="stack" data-reveal>
+              <h3>Gut zu wissen</h3>
+              <ul class="checklist" role="list">
+                <li>Keine Bestellung über diese Seite, kein Warenkorb, keine Kasse</li>
+                <li>Preise und Verfügbarkeit stehen ausschließlich im externen Shop</li>
+                <li>Bekleidung wird über einen separaten Spreadshop abgewickelt</li>
+                <li>Beratung zu Größe und Material per Telefon oder Formular</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--#include file="src/partials/cta-band.html" {
+        "title": "Unsicher bei der Auswahl",
+        "text": "Schreib mir, wie schwer dein Hund ist, wie er an der Leine läuft und wofür du die Ausrüstung brauchst. Dann sage ich dir, was passt."
+      } -->
+    </main>
+
+    <!--#include file="src/partials/footer.html" -->
+  </body>
+</html>

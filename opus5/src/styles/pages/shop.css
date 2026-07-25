@@ -5,20 +5,51 @@
     grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
   }
 
+  /* Gleiche Hoehe fuer alle Kacheln, damit das Raster ruhig bleibt. */
+  .shop-grid .tile {
+    min-block-size: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .shop-grid .tile__meta {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   @media (min-width: 64rem) {
-    /* Erste Kachel doppelt breit und hoch – bricht das Raster auf. */
+    .shop-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    /* Kernkategorie belegt ein Quadrat aus vier Zellen. */
     .shop-grid > :first-child {
       grid-column: span 2;
       grid-row: span 2;
+      aspect-ratio: auto;
     }
 
     .shop-grid > :first-child .tile__title {
       font-size: var(--step-3);
     }
-  }
 
-  .shop-grid .tile {
-    min-block-size: 13rem;
+    .shop-grid > :first-child .tile__meta {
+      -webkit-line-clamp: 4;
+      max-inline-size: 34ch;
+    }
+
+    /* Die zehnte Kachel bliebe sonst allein stehen. Als Vollbreiten-Band
+       ist sie zugleich inhaltlich passend: Bekleidung laeuft extern. */
+    .shop-grid > :last-child {
+      grid-column: 1 / -1;
+      aspect-ratio: auto;
+      min-block-size: 11rem;
+    }
+
+    .shop-grid > :last-child .tile__meta {
+      max-inline-size: 52ch;
+    }
   }
 
   .filter-bar {
@@ -67,5 +98,54 @@
     font-size: var(--step--1);
     color: var(--c-text-muted);
     margin-inline-start: auto;
+  }
+
+  /*
+   * Neutraler Platzhalter statt erfundener Produktfotos. Bewusst ohne Motiv –
+   * ein falsches Bild waere irrefuehrender als gar keines.
+   */
+  .product__media--blank {
+    position: relative;
+    background: repeating-linear-gradient(
+      135deg,
+      var(--c-surface-raised) 0 10px,
+      color-mix(in oklab, var(--c-surface-raised) 82%, var(--c-text)) 10px 20px
+    );
+  }
+
+  .product__mark {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    font-weight: 800;
+    letter-spacing: var(--tracking-caps);
+    color: color-mix(in oklab, var(--c-text) 45%, transparent);
+    padding: 0.15em 0.5em;
+    border-radius: var(--radius-sm);
+    background: var(--c-surface);
+  }
+
+  /* Partnerhinweis auf der Ernaehrungsseite: Logo neben Fliesstext. */
+  .partner-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    padding: var(--space-5);
+    border: var(--border-hairline);
+    border-radius: var(--radius-md);
+    background: var(--c-surface);
+  }
+
+  .partner-note img {
+    inline-size: 8rem;
+    block-size: auto;
+    flex: none;
+  }
+
+  .partner-note p {
+    flex: 1 1 18rem;
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
   }
 }
