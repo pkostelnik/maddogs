@@ -1,0 +1,166 @@
+<a class="skip-link" href="#main">Zum Hauptinhalt springen</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="Mad Dogs Germany – zur Startseite">
+      <img
+        src="/src/assets/images/logo-mad-dogs-96.webp"
+        srcset="
+          /src/assets/images/logo-mad-dogs-96.webp   96w,
+          /src/assets/images/logo-mad-dogs-192.webp 192w
+        "
+        sizes="40px"
+        width="40"
+        height="40"
+        alt=""
+      />
+      <span class="brand__name">
+        <b>Mad Dogs</b>
+        <span>Search &amp; Workingdogs</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <ul class="nav__list">
+        <li class="nav__item--has-menu" data-nav-dropdown>
+          <button
+            class="nav__link"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-training"
+            data-nav-dropdown-trigger
+          >
+            Training
+            <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m6 9 6 6 6-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <ul class="nav__submenu" id="menu-training">
+            <li>
+              <a href="/training/">Alle Angebote<small>Übersicht und Einstieg</small></a>
+            </li>
+            <li>
+              <a href="/training/dogwalking/">Dogwalking<small>Gassi-Service in Niederkassel</small></a>
+            </li>
+            <li>
+              <a href="/training/man-pet-trail/">Man &amp; Pet Trail<small>Personen- und Tiersuche</small></a>
+            </li>
+            <li>
+              <a href="/training/spuerhunde/">Spürhunde<small>Geruchsdifferenzierung</small></a>
+            </li>
+            <li>
+              <a href="/training/sporthunde/">Sporthunde<small>Turnierhundesport</small></a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav__link" href="/shop/">Shop</a></li>
+        <li><a class="nav__link" href="/ernaehrung/">Ernährung</a></li>
+        <li><a class="nav__link" href="/ueber-uns/">Über uns</a></li>
+        <li><a class="nav__link" href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button
+        class="icon-btn theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-pressed="false"
+      >
+        <span class="visually-hidden">Helles Farbschema aktivieren</span>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.9"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9" />
+          <path
+            d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+            stroke="currentColor"
+            stroke-width="1.9"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <a class="btn btn--ember" href="/kontakt/">Proberunde sichern</a>
+
+      <button
+        class="icon-btn nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-drawer"
+        data-nav-toggle
+      >
+        <span class="visually-hidden">Menü öffnen</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M4 7h16M4 12h16M4 17h16"
+            stroke="currentColor"
+            stroke-width="2.1"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-drawer" id="nav-drawer" data-open="false" data-nav-drawer>
+    <ul>
+      <li>
+        <button
+          class="nav-drawer__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="drawer-training"
+        >
+          Training
+          <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+            <path
+              d="m6 9 6 6 6-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="nav-drawer__sub" id="drawer-training">
+          <div>
+            <ul>
+              <li><a href="/training/">Alle Angebote</a></li>
+              <li><a href="/training/dogwalking/">Dogwalking</a></li>
+              <li><a href="/training/man-pet-trail/">Man &amp; Pet Trail</a></li>
+              <li><a href="/training/spuerhunde/">Spürhunde</a></li>
+              <li><a href="/training/sporthunde/">Sporthunde</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="/shop/">Shop</a></li>
+      <li><a href="/ernaehrung/">Ernährung</a></li>
+      <li><a href="/ueber-uns/">Über uns</a></li>
+      <li><a href="/galerie/">Galerie</a></li>
+      <li><a href="/kundenstimmen/">Kundenstimmen</a></li>
+      <li><a href="/kontakt/">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-drawer__foot">
+      <a class="btn btn--ember btn--lg" href="/kontakt/">Proberunde sichern</a>
+      <a class="btn btn--ghost" href="tel:+491733649143">0173 3649143 anrufen</a>
+    </div>
+  </div>
+</header>

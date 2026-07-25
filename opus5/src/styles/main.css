@@ -1,0 +1,48 @@
+/*
+ * Mad Dogs Germany – Stylesheet-Einstieg.
+ * Reihenfolge der Layer bestimmt die Spezifitäts-Hierarchie, nicht die
+ * Reihenfolge der Imports. Utilities gewinnen immer.
+ */
+@layer reset, tokens, base, layout, components, pages, utilities;
+
+@import './reset.css';
+@import './tokens.css';
+@import './base.css';
+@import './layout.css';
+
+@import './components/controls.css';
+@import './components/card.css';
+@import './components/nav.css';
+@import './components/sections.css';
+@import './components/forms.css';
+
+@import './pages/home.css';
+@import './pages/service.css';
+@import './pages/shop.css';
+
+@layer utilities {
+  /* Scroll-Reveal. Ohne JS bleibt alles sichtbar (kein FOUC-Risiko). */
+  [data-reveal] {
+    opacity: 1;
+  }
+
+  html.js [data-reveal] {
+    opacity: 0;
+    translate: 0 1.25rem;
+    transition: opacity var(--dur-slow) var(--ease-out),
+      translate var(--dur-slow) var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  html.js [data-reveal].is-revealed {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.js [data-reveal] {
+      opacity: 1;
+      translate: none;
+    }
+  }
+}

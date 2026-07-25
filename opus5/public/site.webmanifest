@@ -1,0 +1,14 @@
+{
+  "name": "Mad Dogs Germany",
+  "short_name": "Mad Dogs",
+  "description": "Hundetraining, Dogwalking und Ausrüstung aus Niederkassel.",
+  "lang": "de",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0f12",
+  "theme_color": "#0d0f12",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

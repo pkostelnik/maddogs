@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "skillopt-sleep": {
+      "source": "microsoft/skillopt",
+      "sourceType": "github",
+      "skillPath": "plugins/claude-code/skills/skillopt-sleep/SKILL.md",
+      "computedHash": "a393f0c781ca9e8683e54d3a2216e9eece4ca046a67c4903a2c3d9eb58c78595"
+    }
+  }
+}

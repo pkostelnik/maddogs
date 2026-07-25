@@ -1,0 +1,500 @@
+{
+  "logo-mad-dogs": {
+    "alt": "Logo Mad Dogs – Search and Workingdogs, gegründet 2023",
+    "width": 384,
+    "height": 384,
+    "avif": [
+      {
+        "w": 96,
+        "src": "/src/assets/images/logo-mad-dogs-96.avif"
+      },
+      {
+        "w": 192,
+        "src": "/src/assets/images/logo-mad-dogs-192.avif"
+      },
+      {
+        "w": 384,
+        "src": "/src/assets/images/logo-mad-dogs-384.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 96,
+        "src": "/src/assets/images/logo-mad-dogs-96.webp"
+      },
+      {
+        "w": 192,
+        "src": "/src/assets/images/logo-mad-dogs-192.webp"
+      },
+      {
+        "w": 384,
+        "src": "/src/assets/images/logo-mad-dogs-384.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/logo-mad-dogs.jpg"
+  },
+  "logo-mad-dogs-alt": {
+    "alt": "Alternatives Mad-Dogs-Emblem mit Malinois-Portrait",
+    "width": 384,
+    "height": 384,
+    "avif": [
+      {
+        "w": 192,
+        "src": "/src/assets/images/logo-mad-dogs-alt-192.avif"
+      },
+      {
+        "w": 384,
+        "src": "/src/assets/images/logo-mad-dogs-alt-384.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 192,
+        "src": "/src/assets/images/logo-mad-dogs-alt-192.webp"
+      },
+      {
+        "w": 384,
+        "src": "/src/assets/images/logo-mad-dogs-alt-384.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/logo-mad-dogs-alt.jpg"
+  },
+  "logo-dogwalker-ndk": {
+    "alt": "Emblem Dogwalker NDK – Mad Dogs Niederkassel",
+    "width": 720,
+    "height": 588,
+    "avif": [
+      {
+        "w": 240,
+        "src": "/src/assets/images/logo-dogwalker-ndk-240.avif"
+      },
+      {
+        "w": 480,
+        "src": "/src/assets/images/logo-dogwalker-ndk-480.avif"
+      },
+      {
+        "w": 720,
+        "src": "/src/assets/images/logo-dogwalker-ndk-720.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 240,
+        "src": "/src/assets/images/logo-dogwalker-ndk-240.webp"
+      },
+      {
+        "w": 480,
+        "src": "/src/assets/images/logo-dogwalker-ndk-480.webp"
+      },
+      {
+        "w": 720,
+        "src": "/src/assets/images/logo-dogwalker-ndk-720.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/logo-dogwalker-ndk.png"
+  },
+  "hero-malinois-wiese": {
+    "alt": "Malinois liegt aufmerksam in einer blühenden Sommerwiese",
+    "width": 2000,
+    "height": 1328,
+    "avif": [
+      {
+        "w": 640,
+        "src": "/src/assets/images/hero-malinois-wiese-640.avif"
+      },
+      {
+        "w": 1024,
+        "src": "/src/assets/images/hero-malinois-wiese-1024.avif"
+      },
+      {
+        "w": 1600,
+        "src": "/src/assets/images/hero-malinois-wiese-1600.avif"
+      },
+      {
+        "w": 2000,
+        "src": "/src/assets/images/hero-malinois-wiese-2000.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 640,
+        "src": "/src/assets/images/hero-malinois-wiese-640.webp"
+      },
+      {
+        "w": 1024,
+        "src": "/src/assets/images/hero-malinois-wiese-1024.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/src/assets/images/hero-malinois-wiese-1600.webp"
+      },
+      {
+        "w": 2000,
+        "src": "/src/assets/images/hero-malinois-wiese-2000.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/hero-malinois-wiese.jpg"
+  },
+  "chris-fuehrt-malinois": {
+    "alt": "Chris führt einen Malinois an lockerer Leine über eine Straße",
+    "width": 1333,
+    "height": 2000,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-fuehrt-malinois-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/chris-fuehrt-malinois-800.avif"
+      },
+      {
+        "w": 1333,
+        "src": "/src/assets/images/chris-fuehrt-malinois-1333.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-fuehrt-malinois-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/chris-fuehrt-malinois-800.webp"
+      },
+      {
+        "w": 1333,
+        "src": "/src/assets/images/chris-fuehrt-malinois-1333.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/chris-fuehrt-malinois.jpg"
+  },
+  "chris-mit-hund-umarmung": {
+    "alt": "Malinois springt Chris in die Arme, beide sichtlich vertraut",
+    "width": 690,
+    "height": 960,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-mit-hund-umarmung-480.avif"
+      },
+      {
+        "w": 690,
+        "src": "/src/assets/images/chris-mit-hund-umarmung-690.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-mit-hund-umarmung-480.webp"
+      },
+      {
+        "w": 690,
+        "src": "/src/assets/images/chris-mit-hund-umarmung-690.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/chris-mit-hund-umarmung.jpg"
+  },
+  "training-platzarbeit": {
+    "alt": "Chris arbeitet auf dem Hundeplatz konzentriert mit einem Hund",
+    "width": 402,
+    "height": 300,
+    "avif": [
+      {
+        "w": 402,
+        "src": "/src/assets/images/training-platzarbeit-402.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 402,
+        "src": "/src/assets/images/training-platzarbeit-402.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/training-platzarbeit.jpg"
+  },
+  "chris-portrait-hund": {
+    "alt": "Chris mit seinem schwarzen Schäferhund-Mischling im Freien",
+    "width": 1500,
+    "height": 2000,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-portrait-hund-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/chris-portrait-hund-800.avif"
+      },
+      {
+        "w": 1500,
+        "src": "/src/assets/images/chris-portrait-hund-1500.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/chris-portrait-hund-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/chris-portrait-hund-800.webp"
+      },
+      {
+        "w": 1500,
+        "src": "/src/assets/images/chris-portrait-hund-1500.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/chris-portrait-hund.jpg"
+  },
+  "malinois-wald-fels": {
+    "alt": "Malinois sitzt auf einem bemoosten Felsen im Wald",
+    "width": 1428,
+    "height": 2000,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/malinois-wald-fels-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/malinois-wald-fels-800.avif"
+      },
+      {
+        "w": 1428,
+        "src": "/src/assets/images/malinois-wald-fels-1428.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/malinois-wald-fels-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/malinois-wald-fels-800.webp"
+      },
+      {
+        "w": 1428,
+        "src": "/src/assets/images/malinois-wald-fels-1428.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/malinois-wald-fels.jpg"
+  },
+  "hund-geschirr-einsatz": {
+    "alt": "Schwarzer Hund mit taktischem Arbeitsgeschirr im Gras",
+    "width": 1500,
+    "height": 2000,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/hund-geschirr-einsatz-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/hund-geschirr-einsatz-800.avif"
+      },
+      {
+        "w": 1500,
+        "src": "/src/assets/images/hund-geschirr-einsatz-1500.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/hund-geschirr-einsatz-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/hund-geschirr-einsatz-800.webp"
+      },
+      {
+        "w": 1500,
+        "src": "/src/assets/images/hund-geschirr-einsatz-1500.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/hund-geschirr-einsatz.jpg"
+  },
+  "galerie-golden-retriever": {
+    "alt": "Golden Retriever blickt im Abendlicht erwartungsvoll nach oben",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-golden-retriever-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-golden-retriever-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-golden-retriever-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-golden-retriever-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-golden-retriever.jpg"
+  },
+  "galerie-hund-maulkorb": {
+    "alt": "Hund mit Maulkorb auf einem Feldweg, im Hintergrund ein zweiter Hund",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-hund-maulkorb-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-hund-maulkorb-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-hund-maulkorb-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-hund-maulkorb-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-hund-maulkorb.jpg"
+  },
+  "galerie-mischling-weg": {
+    "alt": "Aufmerksamer Mischling steht auf einem Schotterweg",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-mischling-weg-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-mischling-weg-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-mischling-weg-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-mischling-weg-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-mischling-weg.jpg"
+  },
+  "galerie-pinscher-feld": {
+    "alt": "Pinscher-Mischling läuft ausgelassen durch ein Sommerfeld",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-pinscher-feld-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-pinscher-feld-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-pinscher-feld-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-pinscher-feld-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-pinscher-feld.jpg"
+  },
+  "galerie-weisser-hund": {
+    "alt": "Weißer Hund lacht in die Kamera, dahinter ein weiter Himmel",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-weisser-hund-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-weisser-hund-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-weisser-hund-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-weisser-hund-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-weisser-hund.jpg"
+  },
+  "galerie-hund-im-auto": {
+    "alt": "Malinois liegt entspannt auf dem Beifahrersitz",
+    "width": 800,
+    "height": 1067,
+    "avif": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-hund-im-auto-480.avif"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-hund-im-auto-800.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/src/assets/images/galerie-hund-im-auto-480.webp"
+      },
+      {
+        "w": 800,
+        "src": "/src/assets/images/galerie-hund-im-auto-800.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/galerie-hund-im-auto.jpg"
+  },
+  "logo-reico-partner": {
+    "alt": "Partnerlogo Reico Vital-Systeme",
+    "width": 400,
+    "height": 234,
+    "avif": [
+      {
+        "w": 200,
+        "src": "/src/assets/images/logo-reico-partner-200.avif"
+      },
+      {
+        "w": 400,
+        "src": "/src/assets/images/logo-reico-partner-400.avif"
+      }
+    ],
+    "webp": [
+      {
+        "w": 200,
+        "src": "/src/assets/images/logo-reico-partner-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/src/assets/images/logo-reico-partner-400.webp"
+      }
+    ],
+    "fallback": "/src/assets/images/logo-reico-partner.png"
+  }
+}

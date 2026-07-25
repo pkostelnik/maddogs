@@ -1,0 +1,370 @@
+@layer components {
+  /* ---------------------------------------------------------------- Formular */
+  .form {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .field {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .field > label {
+    font-weight: 620;
+    font-size: var(--step--1);
+  }
+
+  .field__hint {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .field .req {
+    color: var(--c-danger);
+    margin-inline-start: 0.15em;
+  }
+
+  .field input,
+  .field textarea,
+  .field select {
+    inline-size: 100%;
+    min-block-size: var(--tap-min);
+    padding: var(--space-3) var(--space-4);
+    background: var(--c-surface);
+    color: var(--c-text);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--dur-fast) var(--ease-out),
+      box-shadow var(--dur-fast) var(--ease-out);
+  }
+
+  .field textarea {
+    min-block-size: 9rem;
+    resize: vertical;
+    line-height: 1.6;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: var(--c-text-muted);
+    opacity: 0.75;
+  }
+
+  .field input:hover,
+  .field textarea:hover {
+    border-color: var(--c-text-muted);
+  }
+
+  .field :is(input, textarea, select):focus-visible {
+    border-color: var(--c-accent);
+  }
+
+  /* Fehlerzustand nie allein über Farbe: Rahmen, Icon und Text. */
+  .field[data-invalid='true'] :is(input, textarea, select) {
+    border-color: var(--c-danger);
+    border-inline-start-width: 4px;
+  }
+
+  .field__error {
+    display: none;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--step--1);
+    color: var(--c-danger);
+    font-weight: 600;
+  }
+
+  .field__error::before {
+    content: '';
+    flex: none;
+    inline-size: 1.05em;
+    block-size: 1.05em;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 8v5m0 3.5v.2M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+  }
+
+  .field[data-invalid='true'] .field__error {
+    display: flex;
+  }
+
+  .field--check {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: var(--space-3);
+  }
+
+  .field--check input {
+    inline-size: 1.35rem;
+    block-size: 1.35rem;
+    min-block-size: 0;
+    margin-block-start: 0.2rem;
+    accent-color: var(--c-accent-bg);
+    padding: 0;
+  }
+
+  .field--check label {
+    font-weight: 450;
+    font-size: var(--step--1);
+    line-height: 1.55;
+  }
+
+  .field--check .field__error {
+    grid-column: 1 / -1;
+  }
+
+  .form__row {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  @media (min-width: 40rem) {
+    .form__row--2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .form__status {
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--c-line-strong);
+    font-size: var(--step--1);
+  }
+
+  .form__status:empty {
+    display: none;
+  }
+
+  .form__status[data-state='success'] {
+    border-color: color-mix(in oklab, var(--c-success) 55%, transparent);
+    background: color-mix(in oklab, var(--c-success) 12%, transparent);
+  }
+
+  .form__status[data-state='error'] {
+    border-color: color-mix(in oklab, var(--c-danger) 55%, transparent);
+    background: color-mix(in oklab, var(--c-danger) 12%, transparent);
+  }
+
+  /* Honeypot statt Captcha: unsichtbar, aber nicht display:none. */
+  .hp-field {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  /* --------------------------------------------------------------- Galerie */
+  .gallery {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: repeat(auto-fill, minmax(min(13rem, 100%), 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery__item {
+    margin: 0;
+  }
+
+  .gallery__btn {
+    display: block;
+    inline-size: 100%;
+    padding: 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--c-surface-raised);
+    border: var(--border-hairline);
+  }
+
+  .gallery__btn img {
+    inline-size: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    transition: scale var(--dur-slow) var(--ease-out),
+      opacity var(--dur-fast) var(--ease-out);
+  }
+
+  .gallery__btn:hover img {
+    scale: 1.05;
+    opacity: 0.9;
+  }
+
+  .gallery--strip {
+    grid-auto-flow: column;
+    grid-auto-columns: min(72vw, 18rem);
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-block-end: var(--space-3);
+    scrollbar-width: thin;
+  }
+
+  .gallery--strip .gallery__item {
+    scroll-snap-align: start;
+  }
+
+  /* -------------------------------------------------------------- Lightbox */
+  .lightbox {
+    inline-size: min(100vw - 2rem, 60rem);
+    margin: auto;
+  }
+
+  .lightbox__inner {
+    position: relative;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .lightbox img {
+    inline-size: 100%;
+    max-block-size: 78svh;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    background: #000;
+  }
+
+  .lightbox__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    color: #eceae5;
+    font-size: var(--step--1);
+  }
+
+  .lightbox__nav {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .lightbox__nav button,
+  .lightbox__close {
+    display: inline-grid;
+    place-items: center;
+    inline-size: var(--tap-min);
+    block-size: var(--tap-min);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgb(255 255 255 / 0.28);
+    color: #eceae5;
+    background: rgb(255 255 255 / 0.06);
+  }
+
+  .lightbox__nav button:hover,
+  .lightbox__close:hover {
+    background: rgb(255 255 255 / 0.16);
+  }
+
+  .lightbox__nav svg,
+  .lightbox__close svg {
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+  }
+
+  /* -------------------------------------------------------------- Produkte */
+  .product {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: var(--border-hairline);
+    border-radius: var(--radius-md);
+    background: var(--c-surface);
+  }
+
+  .product__media {
+    aspect-ratio: 1;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--c-surface-raised);
+    display: grid;
+    place-items: center;
+  }
+
+  .product__media img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .product__name {
+    font-size: var(--step-0);
+    font-stretch: 88%;
+  }
+
+  .product__meta {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .product__price {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-weight: 800;
+    font-stretch: 84%;
+    margin-block-start: auto;
+  }
+
+  .product .btn {
+    inline-size: 100%;
+  }
+
+  .ext-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .ext-hint::after {
+    content: '';
+    inline-size: 0.85em;
+    block-size: 0.85em;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 4h6v6M20 4 10 14M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+  }
+
+  /* ------------------------------------------------------------- Zeitleiste */
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .timeline li {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: var(--space-4);
+    padding-block-end: var(--space-5);
+    border-block-end: var(--border-hairline);
+  }
+
+  .timeline li:last-child {
+    border-block-end: 0;
+    padding-block-end: 0;
+  }
+
+  .timeline time,
+  .timeline .timeline__year {
+    font-family: var(--font-display);
+    font-size: var(--step-0);
+    font-weight: 800;
+    font-stretch: 82%;
+    color: var(--c-accent);
+    line-height: 1.4;
+  }
+
+  .timeline p {
+    color: var(--c-text-muted);
+    font-size: var(--step--1);
+    margin-block-start: var(--space-1);
+  }
+
+  .timeline h3 {
+    font-size: var(--step-0);
+  }
+}

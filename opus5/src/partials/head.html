@@ -1,0 +1,55 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark light" />
+<title>{{title}} | Mad Dogs Germany</title>
+<meta name="description" content="{{description}}" />
+<link rel="canonical" href="https://www.mad-dogs-germany.de{{path}}" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Mad Dogs Germany" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:title" content="{{title}} | Mad Dogs Germany" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:url" content="https://www.mad-dogs-germany.de{{path}}" />
+<meta property="og:image" content="https://www.mad-dogs-germany.de/og-mad-dogs.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0d0f12" />
+
+<link
+  rel="preload"
+  href="/src/assets/fonts/archivo-var.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/src/assets/fonts/inter-var.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+
+<script>
+  // Theme vor dem ersten Paint setzen, sonst blitzt der falsche Modus auf.
+  ;(function () {
+    document.documentElement.classList.add('js')
+    try {
+      var stored = localStorage.getItem('md-theme')
+      if (stored === 'light' || stored === 'dark') {
+        document.documentElement.dataset.theme = stored
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    } catch (e) {
+      /* localStorage blockiert – Standardtheme greift. */
+    }
+  })()
+</script>
+
+<link rel="stylesheet" href="/src/styles/main.css" />
+<script type="module" src="/src/scripts/main.js"></script>

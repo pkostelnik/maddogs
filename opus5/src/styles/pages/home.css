@@ -1,0 +1,90 @@
+@layer pages {
+  /* Leistungsübersicht auf der Startseite: erste Karte darf breiter sein. */
+  .home-services {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  }
+
+  @media (min-width: 64rem) {
+    .home-services {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    /* Kernangebot belegt den linken Block über beide Reihen, */
+    /* die drei übrigen Karten füllen die rechte Hälfte lückenlos. */
+    .home-services > :nth-child(1) {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+
+    .home-services > :nth-child(4) {
+      grid-column: 3 / span 2;
+    }
+  }
+
+  .home-trust {
+    background: var(--c-bg-deep);
+    border-block: var(--border-hairline);
+    padding-block: var(--space-7);
+  }
+
+  /* Preis-Highlight mit Bild links, Inhalt rechts. */
+  .price-highlight {
+    background: var(--c-surface);
+    border: var(--border-hairline);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: grid;
+  }
+
+  .price-highlight__media img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    min-block-size: 16rem;
+  }
+
+  .price-highlight__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding: var(--space-6);
+  }
+
+  @media (min-width: 56rem) {
+    .price-highlight {
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+    }
+
+    .price-highlight__body {
+      padding: var(--space-8);
+    }
+  }
+
+  /* Shop-Teaser: Kacheln in versetzter Höhe für Rhythmus. */
+  .shop-teaser {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  }
+
+  @media (min-width: 64rem) {
+    .shop-teaser > :nth-child(odd) {
+      margin-block-start: var(--space-6);
+    }
+  }
+
+  .home-intro {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 60rem) {
+    .home-intro {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: var(--space-8);
+      align-items: start;
+    }
+  }
+}

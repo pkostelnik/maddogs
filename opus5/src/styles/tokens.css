@@ -1,0 +1,169 @@
+@layer tokens {
+  :root {
+    color-scheme: dark;
+
+    /* ---- Marke ------------------------------------------------------- */
+    /* Aus dem Logo abgeleitet: tiefes Royalblau, Schwarz, Knochenweiß. */
+    --brand-900: #081a4d;
+    --brand-800: #0d2670;
+    --brand-700: #103090;
+    --brand-600: #1a44bd;
+    --brand-500: #2f5ce0;
+    --brand-400: #5c86f5;
+    --brand-300: #91aefb;
+    --brand-200: #c3d3fd;
+
+    --ember-600: #c44f1c;
+    --ember-500: #e4622a;
+    --ember-400: #f5834f;
+
+    --neutral-1000: #08090b;
+    --neutral-950: #0d0f12;
+    --neutral-900: #14171c;
+    --neutral-800: #1d2128;
+    --neutral-700: #2b3038;
+    --neutral-600: #444a54;
+    --neutral-500: #6b7280;
+    --neutral-400: #9aa0a9;
+    --neutral-300: #c2c6cc;
+    --neutral-200: #e2e0da;
+    --neutral-100: #f0eee9;
+    --neutral-50: #f7f5f1;
+
+    --success-400: #4ade80;
+    --danger-400: #ff8a7a;
+    --danger-700: #a32615;
+
+    /* ---- Semantische Farben (Dark = Standard) ------------------------ */
+    --c-bg: var(--neutral-950);
+    --c-bg-deep: var(--neutral-1000);
+    --c-surface: var(--neutral-900);
+    --c-surface-raised: var(--neutral-800);
+    --c-text: #eceae5;
+    --c-text-muted: var(--neutral-400);
+    --c-text-inverse: var(--neutral-950);
+    --c-line: rgb(255 255 255 / 0.11);
+    --c-line-strong: rgb(255 255 255 / 0.22);
+    --c-accent: var(--brand-400);
+    --c-accent-quiet: var(--brand-300);
+    --c-accent-bg: var(--brand-700);
+    --c-accent-contrast: #ffffff;
+    --c-ember: var(--ember-400);
+    --c-focus: #ffd166;
+    --c-success: var(--success-400);
+    --c-danger: var(--danger-400);
+    --c-scrim: rgb(8 9 11 / 0.72);
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 8px 24px -12px rgb(0 0 0 / 0.7);
+    --shadow-lg: 0 32px 64px -32px rgb(0 0 0 / 0.85);
+    --shadow-ring: inset 0 0 0 1px var(--c-line);
+
+    /* ---- Typografie -------------------------------------------------- */
+    --font-display: 'Archivo Variable', 'Archivo', 'Helvetica Neue', system-ui, sans-serif;
+    --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+    /* Fluid Scale, Basis 16px @360 bis 18px @1440 */
+    --step--2: clamp(0.7rem, 0.68rem + 0.09vw, 0.76rem);
+    --step--1: clamp(0.83rem, 0.79rem + 0.16vw, 0.94rem);
+    --step-0: clamp(1rem, 0.95rem + 0.23vw, 1.13rem);
+    --step-1: clamp(1.2rem, 1.12rem + 0.36vw, 1.42rem);
+    --step-2: clamp(1.44rem, 1.31rem + 0.57vw, 1.78rem);
+    --step-3: clamp(1.73rem, 1.53rem + 0.87vw, 2.22rem);
+    --step-4: clamp(2.07rem, 1.78rem + 1.29vw, 2.78rem);
+    --step-5: clamp(2.49rem, 2.06rem + 1.88vw, 3.47rem);
+    --step-6: clamp(2.99rem, 2.38rem + 2.68vw, 4.34rem);
+    --step-7: clamp(3.58rem, 2.72rem + 3.77vw, 5.42rem);
+
+    --lh-tight: 0.98;
+    --lh-snug: 1.15;
+    --lh-normal: 1.65;
+
+    --tracking-tight: -0.02em;
+    --tracking-wide: 0.02em;
+    --tracking-caps: 0.12em;
+
+    /* ---- Raum -------------------------------------------------------- */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 6rem;
+    --space-10: 8rem;
+    --space-section: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+
+    /* ---- Form -------------------------------------------------------- */
+    --radius-xs: 3px;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    --border-hairline: 1px solid var(--c-line);
+
+    /* ---- Bewegung ---------------------------------------------------- */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --dur-fast: 140ms;
+    --dur-mid: 260ms;
+    --dur-slow: 520ms;
+
+    /* ---- Layout ------------------------------------------------------ */
+    --wrap-content: 68rem;
+    --wrap-narrow: 42rem;
+    --wrap-gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
+    --header-h: 4.25rem;
+
+    --tap-min: 44px;
+  }
+
+  [data-theme='light'] {
+    color-scheme: light;
+
+    --c-bg: var(--neutral-50);
+    --c-bg-deep: var(--neutral-100);
+    --c-surface: #ffffff;
+    --c-surface-raised: var(--neutral-100);
+    --c-text: #101318;
+    --c-text-muted: #4d545e;
+    --c-text-inverse: var(--neutral-50);
+    --c-line: rgb(16 19 24 / 0.13);
+    --c-line-strong: rgb(16 19 24 / 0.28);
+    --c-accent: var(--brand-700);
+    --c-accent-quiet: var(--brand-800);
+    --c-accent-bg: var(--brand-700);
+    --c-accent-contrast: #ffffff;
+    --c-ember: var(--ember-600);
+    --c-focus: #7a4a00;
+    --c-success: #146c37;
+    --c-danger: var(--danger-700);
+    --c-scrim: rgb(16 19 24 / 0.6);
+
+    --shadow-sm: 0 1px 2px rgb(16 19 24 / 0.08);
+    --shadow-md: 0 10px 30px -18px rgb(16 19 24 / 0.4);
+    --shadow-lg: 0 32px 64px -36px rgb(16 19 24 / 0.35);
+  }
+
+  /* Abschnitte, die immer dunkel bleiben (Hero, Footer, Akzentbänder). */
+  .on-dark {
+    color-scheme: dark;
+    --c-bg: var(--neutral-1000);
+    --c-bg-deep: #000;
+    --c-surface: var(--neutral-900);
+    --c-surface-raised: var(--neutral-800);
+    --c-text: #eceae5;
+    --c-text-muted: var(--neutral-400);
+    --c-line: rgb(255 255 255 / 0.13);
+    --c-line-strong: rgb(255 255 255 / 0.26);
+    --c-accent: var(--brand-400);
+    --c-accent-quiet: var(--brand-300);
+    --c-focus: #ffd166;
+    --c-danger: var(--danger-400);
+    --c-success: var(--success-400);
+    color: var(--c-text);
+  }
+}

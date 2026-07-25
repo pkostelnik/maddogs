@@ -1,0 +1,155 @@
+@layer layout {
+  /*
+   * Ein Grid für alles: Kinder landen standardmäßig in `content`,
+   * können aber per Klasse in `narrow`, `wide` oder `full` ausbrechen.
+   */
+  .wrap {
+    --gutter: var(--wrap-gutter);
+    display: grid;
+    grid-template-columns:
+      [full-start] minmax(var(--gutter), 1fr)
+      [wide-start] minmax(0, calc((var(--wrap-content) - var(--wrap-narrow)) / 2))
+      [content-start] minmax(0, var(--wrap-narrow)) [content-end]
+      minmax(0, calc((var(--wrap-content) - var(--wrap-narrow)) / 2)) [wide-end]
+      minmax(var(--gutter), 1fr) [full-end];
+  }
+
+  .wrap > * {
+    grid-column: wide;
+  }
+
+  .wrap > .narrow {
+    grid-column: content;
+  }
+
+  .wrap > .full {
+    grid-column: full;
+  }
+
+  .section {
+    padding-block: var(--space-section);
+    position: relative;
+  }
+
+  .section--tight {
+    padding-block: calc(var(--space-section) * 0.6);
+  }
+
+  .section--surface {
+    background: var(--c-surface);
+  }
+
+  .section--deep {
+    background: var(--c-bg-deep);
+  }
+
+  .section__head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-block-end: var(--space-7);
+    max-inline-size: 56ch;
+  }
+
+  .section__head--split {
+    max-inline-size: none;
+  }
+
+  @media (min-width: 52rem) {
+    .section__head--split {
+      flex-direction: row;
+      align-items: end;
+      justify-content: space-between;
+      gap: var(--space-7);
+    }
+
+    .section__head--split > :first-child {
+      max-inline-size: 56ch;
+    }
+  }
+
+  /* Auto-Grid: passt sich ohne Media Queries an. */
+  .grid-auto {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  }
+
+  .grid-auto--sm {
+    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr));
+  }
+
+  .grid-auto--lg {
+    grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow, var(--space-4));
+  }
+
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-4);
+  }
+
+  .flow > * + * {
+    margin-block-start: var(--flow, var(--space-4));
+  }
+
+  /* Zwei Spalten, die auf schmalen Viewports stapeln. */
+  .split {
+    display: grid;
+    gap: var(--space-7);
+    align-items: center;
+  }
+
+  @media (min-width: 56rem) {
+    .split {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-8);
+    }
+
+    .split--media-end > .split__media {
+      order: 2;
+    }
+
+    .split--wide-media {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    }
+  }
+
+  .prose {
+    max-inline-size: 68ch;
+  }
+
+  .prose > * + * {
+    margin-block-start: var(--space-4);
+  }
+
+  .prose h2 {
+    margin-block-start: var(--space-7);
+    font-size: var(--step-3);
+  }
+
+  .prose h3 {
+    margin-block-start: var(--space-6);
+    font-size: var(--step-1);
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-inline-start: var(--space-5);
+  }
+
+  .prose li + li {
+    margin-block-start: var(--space-2);
+  }
+
+  .prose a {
+    color: var(--c-accent);
+  }
+}
