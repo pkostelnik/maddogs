@@ -103,22 +103,7 @@
         <div class="wrap">
           <h2 id="trust-title" class="visually-hidden">Erfahrung in Zahlen</h2>
           <ul class="stats" role="list" data-reveal-group>
-            <li class="stat" data-reveal>
-              <span class="stat__value">16</span>
-              <span class="stat__label">Jahre Hundeführung, quer durch alle Rassen</span>
-            </li>
-            <li class="stat" data-reveal>
-              <span class="stat__value">70+</span>
-              <span class="stat__label">Turnierstarts im Turnierhundesport</span>
-            </li>
-            <li class="stat" data-reveal>
-              <span class="stat__value">10</span>
-              <span class="stat__label">Hunde maximal pro Gruppe – nie mehr</span>
-            </li>
-            <li class="stat" data-reveal>
-              <span class="stat__value">1,5</span>
-              <span class="stat__label">Jahre Großrudel-Betreuung in einer Kölner HuTa</span>
-            </li>
+            <!--#each in="site.stats" file="src/partials/stat.html" -->
           </ul>
         </div>
       </section>
@@ -170,74 +155,7 @@
           </div>
 
           <div class="home-services" data-reveal-group>
-            <article class="card card--roomy" data-reveal>
-              <div class="card__media">
-                <picture>
-                  <source
-                    type="image/avif"
-                    srcset="
-                      /src/assets/images/chris-fuehrt-malinois-480.avif  480w,
-                      /src/assets/images/chris-fuehrt-malinois-800.avif  800w,
-                      /src/assets/images/chris-fuehrt-malinois-1333.avif 1333w
-                    "
-                    sizes="(min-width: 64rem) 40vw, 100vw"
-                  />
-                  <img
-                    src="/src/assets/images/chris-fuehrt-malinois.jpg"
-                    width="1333"
-                    height="2000"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Chris führt einen Malinois an lockerer Leine über eine Straße"
-                  />
-                </picture>
-              </div>
-              <p class="card__index">01 — Kernangebot</p>
-              <h3 class="card__title">
-                <a class="card__link" href="/training/dogwalking/">Dogwalking</a>
-              </h3>
-              <p class="card__text">
-                Professioneller Gassi-Service für anspruchsvolle Hunde. Kleine
-                Gruppen, klare Führung, gezielte Auslastung für Körper und Kopf.
-              </p>
-              <p class="card__foot"><span class="badge badge--accent">ab 20 € / Stunde</span></p>
-            </article>
-
-            <article class="card" data-reveal>
-              <p class="card__index">02</p>
-              <h3 class="card__title">
-                <a class="card__link" href="/training/man-pet-trail/">Man &amp; Pet Trail</a>
-              </h3>
-              <p class="card__text">
-                Personen- und Tiersuche über die individuelle Geruchsspur.
-                Nasenarbeit, die auslastet und die Bindung stärkt.
-              </p>
-              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
-            </article>
-
-            <article class="card" data-reveal>
-              <p class="card__index">03</p>
-              <h3 class="card__title">
-                <a class="card__link" href="/training/spuerhunde/">Spürhunde</a>
-              </h3>
-              <p class="card__text">
-                Geruchsdifferenzierung und Anzeigeverhalten – der Einstieg in
-                echte Detektionsarbeit, aufgebaut über positive Verstärkung.
-              </p>
-              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
-            </article>
-
-            <article class="card" data-reveal>
-              <p class="card__index">04</p>
-              <h3 class="card__title">
-                <a class="card__link" href="/training/sporthunde/">Sporthunde</a>
-              </h3>
-              <p class="card__text">
-                Turnierhundesport von Grund auf: Geländelauf, Vierkampf,
-                Hindernislauf. Für Teams, die es ernst meinen.
-              </p>
-              <p class="card__foot"><span class="badge badge--draft">Entwurf</span></p>
-            </article>
+            <!--#each in="services.items" file="src/partials/service-card.html" -->
           </div>
         </div>
       </section>
@@ -304,7 +222,7 @@
 
               <div class="cluster">
                 <a class="btn" href="/training/dogwalking/">Details zum Service</a>
-                <a class="btn btn--ghost" href="https://wa.me/491733649143" rel="noopener">
+                <a class="btn btn--ghost" href="{{site.contact.whatsapp}}" rel="noopener">
                   Proberunde per WhatsApp
                 </a>
               </div>
@@ -398,33 +316,7 @@
           </p>
 
           <div class="grid-auto grid-auto--lg" data-reveal-group>
-            <figure class="quote" data-reveal>
-              <blockquote>
-                <p>
-                  Nach zwei Monaten läuft unser Rüde zum ersten Mal entspannt an
-                  anderen Hunden vorbei. Chris erklärt nicht nur, was zu tun ist,
-                  sondern auch warum.
-                </p>
-              </blockquote>
-              <figcaption>
-                <span class="quote__avatar" aria-hidden="true">SK</span>
-                <span>Sandra K. mit Malinois „Enzo“, Niederkassel</span>
-              </figcaption>
-            </figure>
-
-            <figure class="quote" data-reveal>
-              <blockquote>
-                <p>
-                  Endlich jemand, der vor einem 40-Kilo-Hund nicht zurückschreckt.
-                  Die Gruppen sind klein, und ich bekomme nach jeder Runde eine
-                  ehrliche Rückmeldung.
-                </p>
-              </blockquote>
-              <figcaption>
-                <span class="quote__avatar" aria-hidden="true">MB</span>
-                <span>Markus B. mit Schäferhund „Rex“, Troisdorf</span>
-              </figcaption>
-            </figure>
+            <!--#each in="testimonials.featured" file="src/partials/quote.html" -->
           </div>
         </div>
       </section>

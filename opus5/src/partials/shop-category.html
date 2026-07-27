@@ -1,0 +1,14 @@
+<li class="tile" data-reveal>
+  <!--#include file="src/partials/picture.html" -->
+  <h3 class="tile__title">
+    {{#if external}}
+    <a class="card__link ext-hint" href="{{href}}" rel="noopener">
+      {{title}}
+      <span class="visually-hidden">– öffnet den externen Shop</span>
+    </a>
+    {{/if}} {{#unless external}}
+    <a class="card__link" href="{{href}}">{{title}}</a>
+    {{/unless}}
+  </h3>
+  <p class="tile__meta">{{meta}}</p>
+</li>

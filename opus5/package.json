@@ -13,7 +13,8 @@
     "assets:fetch": "node scripts/fetch-assets.mjs",
     "assets:process": "node scripts/process-images.mjs",
     "test:a11y": "node tests/a11y.mjs",
-    "shot": "node scripts/shot.mjs"
+    "shot": "node scripts/shot.mjs",
+    "test:lh": "node scripts/lighthouse.mjs"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@axe-core/playwright": "^4.12.1",
     "@fontsource-variable/archivo": "^5.3.0",
     "@fontsource-variable/inter": "^5.3.0",
+    "@lhci/cli": "^0.15.1",
     "glob": "^13.0.6",
     "playwright": "^1.62.0",
     "sharp": "^0.35.3",

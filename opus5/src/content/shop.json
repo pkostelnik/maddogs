@@ -1,0 +1,255 @@
+{
+  "categories": [
+    {
+      "title": "Halsbänder",
+      "href": "/shop/halsbaender/",
+      "external": false,
+      "meta": "Leder, Biothane und Zugstopp. Breite Modelle für kräftige Hunde, leuchtende für dunkle Runden. Diese Kategorie ist hier vollständig ausgebaut.",
+      "image": "hund-geschirr-einsatz",
+      "alt": "Schwarzer Hund mit taktischem Arbeitsgeschirr im Gras",
+      "featured": true,
+      "eager": true,
+      "sizes": "(min-width: 64rem) 50vw, 100vw"
+    },
+    {
+      "title": "Leinen",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Führleinen, Schleppleinen, Umhängeleinen. Längen für Alltag und Suchenarbeit.",
+      "image": "malinois-wald-fels",
+      "alt": "Malinois sitzt auf einem bemoosten Felsen im Wald",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "European Pet Pharmacy",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Pflege- und Ergänzungsprodukte. Angaben zu jedem Artikel im Shop.",
+      "image": "galerie-golden-retriever",
+      "alt": "Golden Retriever blickt im Abendlicht erwartungsvoll nach oben",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Non Stop Dogwear",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Geschirre, Gurte und Ausrüstung der norwegischen Marke.",
+      "image": "galerie-mischling-weg",
+      "alt": "Aufmerksamer Mischling steht auf einem Schotterweg",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Trail Zubehör",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Kennzeichnung, Transport und Kleinteile für die Suche.",
+      "image": "galerie-pinscher-feld",
+      "alt": "Pinscher-Mischling läuft ausgelassen durch ein Sommerfeld",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Mäntel und Jacken",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Wetterschutz für Hunde, die draußen arbeiten oder schnell auskühlen.",
+      "image": "galerie-weisser-hund",
+      "alt": "Weißer Hund lacht in die Kamera, dahinter ein weiter Himmel",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Bücher",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Fachliteratur zu Ausbildung, Nasenarbeit und Verhalten.",
+      "image": "galerie-hund-im-auto",
+      "alt": "Malinois liegt entspannt auf dem Beifahrersitz",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Sonstiges",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Maulkörbe, Beutel, Kleinkram. Alles, was in keine der anderen Kategorien passt.",
+      "image": "galerie-hund-maulkorb",
+      "alt": "Hund mit Maulkorb auf einem Feldweg, im Hintergrund ein zweiter Hund",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Kurse",
+      "href": "{{site.external.shop}}",
+      "external": true,
+      "meta": "Buchbare Termine und Gutscheine. Was offen ist, steht im Shop.",
+      "image": "chris-fuehrt-malinois",
+      "alt": "Chris führt einen Malinois an lockerer Leine über eine Straße",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    },
+    {
+      "title": "Bekleidung",
+      "href": "{{site.external.spreadshop}}",
+      "external": true,
+      "meta": "Shirts, Hoodies und Caps mit Mad-Dogs-Motiven. Läuft über einen eigenen Spreadshop mit eigener Bestellabwicklung.",
+      "image": "hero-malinois-wiese",
+      "alt": "Malinois liegt aufmerksam in einer blühenden Sommerwiese",
+      "featured": false,
+      "eager": false,
+      "sizes": "(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw"
+    }
+  ],
+  "filters": [
+    {
+      "value": "alle",
+      "label": "Alle"
+    },
+    {
+      "value": "leder",
+      "label": "Leder"
+    },
+    {
+      "value": "biothane",
+      "label": "Biothane"
+    },
+    {
+      "value": "zugstopp",
+      "label": "Zugstopp"
+    },
+    {
+      "value": "breit",
+      "label": "Breit"
+    },
+    {
+      "value": "leuchtend",
+      "label": "Leuchtend"
+    }
+  ],
+  "halsbaender": [
+    {
+      "name": "Fettleder breit, 40 mm",
+      "meta": "Vegetabil gegerbtes Rindleder, Messingbeschläge. Für Hunde ab 25 kg.",
+      "price": "49 €",
+      "tags": [
+        "leder",
+        "breit"
+      ],
+      "draft": true,
+      "tagList": "leder breit"
+    },
+    {
+      "name": "Zugstopp Leder, schmal",
+      "meta": "Begrenzter Zug, kein Durchziehen. Für Hunde, die aus dem Halsband rutschen.",
+      "price": "54 €",
+      "tags": [
+        "leder",
+        "zugstopp"
+      ],
+      "draft": true,
+      "tagList": "leder zugstopp"
+    },
+    {
+      "name": "Biothane Signal, 25 mm",
+      "meta": "Reflektierende Beschichtung, abwaschbar. Sichtbar im Scheinwerferlicht.",
+      "price": "32 €",
+      "tags": [
+        "biothane",
+        "leuchtend"
+      ],
+      "draft": true,
+      "tagList": "biothane leuchtend"
+    },
+    {
+      "name": "Biothane Arbeit, 40 mm",
+      "meta": "Wasserfest, geruchsneutral. Gedacht für Suchenarbeit im Gelände.",
+      "price": "38 €",
+      "tags": [
+        "biothane",
+        "breit"
+      ],
+      "draft": true,
+      "tagList": "biothane breit"
+    },
+    {
+      "name": "Zugstopp Biothane",
+      "meta": "Zugbegrenzung mit Kettenglied. Leicht zu reinigen, auch nach Regen.",
+      "price": "36 €",
+      "tags": [
+        "biothane",
+        "zugstopp"
+      ],
+      "draft": true,
+      "tagList": "biothane zugstopp"
+    },
+    {
+      "name": "Leder Nacht, 45 mm",
+      "meta": "Breites Lederband mit eingenähtem Reflexstreifen. Für große Hunde im Winter.",
+      "price": "62 €",
+      "tags": [
+        "leder",
+        "leuchtend",
+        "breit"
+      ],
+      "draft": true,
+      "tagList": "leder leuchtend breit"
+    },
+    {
+      "name": "Leuchtband LED, aufladbar",
+      "meta": "Zusatzband über dem Halsband. Drei Leuchtstufen, Ladung per USB-C.",
+      "price": "24 €",
+      "tags": [
+        "leuchtend"
+      ],
+      "draft": true,
+      "tagList": "leuchtend"
+    },
+    {
+      "name": "Leder klassisch, 25 mm",
+      "meta": "Schmales Alltagsband für mittelgroße Hunde. Vier Längen zur Auswahl.",
+      "price": "39 €",
+      "tags": [
+        "leder"
+      ],
+      "draft": true,
+      "tagList": "leder"
+    },
+    {
+      "name": "Trail-Halsband, 40 mm",
+      "meta": "Breite Auflage, Zugstopp und Reflexnaht. Zusammengestellt für lange Sucheinheiten.",
+      "price": "58 €",
+      "tags": [
+        "biothane",
+        "zugstopp",
+        "breit",
+        "leuchtend"
+      ],
+      "draft": true,
+      "tagList": "biothane zugstopp breit leuchtend"
+    },
+    {
+      "name": "Zugstopp breit, gepolstert",
+      "meta": "Lederband mit Filzunterlage. Verteilt den Druck bei Hunden, die in die Leine gehen.",
+      "price": "67 €",
+      "tags": [
+        "leder",
+        "breit",
+        "zugstopp"
+      ],
+      "draft": true,
+      "tagList": "leder breit zugstopp"
+    }
+  ],
+  "note": "Produktnamen, Beschreibungen und Preise sind Beispieldaten."
+}

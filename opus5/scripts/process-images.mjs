@@ -153,10 +153,14 @@ async function main() {
     variants.fallback = `/src/assets/images/${cfg.name}.${fallbackExt}`
 
     const ratio = meta.height / meta.width
+    const srcset = (list) => list.map((v) => `${v.src} ${v.w}w`).join(', ')
     manifest[cfg.name] = {
       alt: cfg.alt,
       width: fallbackWidth,
       height: Math.round(fallbackWidth * ratio),
+      // Fertige srcset-Strings, damit Templates sie direkt einsetzen koennen.
+      srcsetAvif: srcset(variants.avif),
+      srcsetWebp: srcset(variants.webp),
       ...variants,
     }
     console.log(`${cfg.name}: ${widths.join('/')} px`)

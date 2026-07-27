@@ -38,7 +38,7 @@
           <div class="page-head__inner">
             <nav class="breadcrumb" aria-label="Brotkrumennavigation">
               <ol>
-                <li><a href="/">Start</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><a href="/training/">Training</a></li>
                 <li><span aria-current="page">Man &amp; Pet Trail</span></li>
               </ol>
@@ -145,53 +145,7 @@
                 <p class="eyebrow">Häufige Fragen</p>
                 <h3>Gut zu wissen</h3>
                 <div class="faq">
-                  <details>
-                    <summary>Was ist der Unterschied zwischen Mantrailing und Fährtenarbeit?</summary>
-                    <div>
-                      Bei der Fährte folgt der Hund der Bodenverletzung, also den
-                      zertretenen Pflanzen und der aufgebrochenen Erde. Beim Trailing
-                      folgt er dem individuellen Geruch einer bestimmten Person. Er
-                      kann deshalb auch über Asphalt arbeiten und Abkürzungen im
-                      Wind nutzen.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Wie muss ein Geruchsartikel aussehen?</summary>
-                    <div>
-                      Am besten ein Gegenstand mit langem Hautkontakt: getragene
-                      Socke, Kopfkissenbezug, Halsband des Tieres. Fass ihn möglichst
-                      nicht mit bloßen Händen an und pack ihn in eine saubere
-                      Papier- oder Zipptüte. Je weniger Fremdgeruch, desto klarer die
-                      Aufgabe.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Warum ist die Windrichtung so wichtig?</summary>
-                    <div>
-                      Geruch bleibt selten genau dort liegen, wo die Person gelaufen
-                      ist. Er verweht, sammelt sich an Hauswänden und in Senken. Wenn
-                      du den Wind liest, verstehst du, warum dein Hund versetzt
-                      arbeitet – und ziehst ihn nicht fälschlich zurück.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Was ist eine Negativanzeige?</summary>
-                    <div>
-                      Der Hund zeigt dir am Startpunkt an, dass der Zielgeruch dort
-                      gar nicht vorhanden ist. Ohne diese Fähigkeit läuft ein Hund
-                      irgendeine Spur, nur um zu arbeiten. Das ist im Ernstfall
-                      wertlos und kostet Zeit.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Wie alt darf eine Spur sein?</summary>
-                    <div>
-                      Das hängt von Wetter, Untergrund und Ausbildungsstand ab.
-                      Anfänger arbeiten frische Spuren von wenigen Minuten.
-                      Fortgeschrittene Teams schaffen mehrere Stunden bis Tage. Feste
-                      Zusagen macht dir dazu niemand seriös.
-                    </div>
-                  </details>
+                  <!--#each in="faq.training-man-pet-trail" file="src/partials/faq-item.html" -->
                 </div>
               </div>
             </div>
@@ -229,11 +183,11 @@
                 </div>
                 <div>
                   <dt>Kontakt</dt>
-                  <dd><a href="tel:+491733649143">0173 3649143</a></dd>
+                  <dd><a href="{{site.contact.phoneHref}}">{{site.contact.phone}}</a></dd>
                 </div>
               </dl>
 
-              <a class="btn btn--ember btn--block" href="https://wa.me/491733649143" rel="noopener">
+              <a class="btn btn--ember btn--block" href="{{site.contact.whatsapp}}" rel="noopener">
                 Termin per WhatsApp
                 <span class="visually-hidden">, öffnet ein externes Angebot</span>
               </a>

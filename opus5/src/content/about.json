@@ -1,0 +1,67 @@
+{
+  "timeline": [
+    {
+      "datetime": "2014",
+      "label": "2014",
+      "isYear": true,
+      "title": "Einstieg in den Hundesport",
+      "text": "Beginn im Turnierhundesport. Aus dem Hobby werden über 70 Turnierstarts mit Teilnahmen bei SWHV, VDH DM und DHV DM."
+    },
+    {
+      "datetime": "2017",
+      "label": "2017",
+      "isYear": true,
+      "title": "Vizemeister der Deutschen Meisterschaft GL 2000",
+      "text": "Zweiter Platz bei der Deutschen Meisterschaft im Geländelauf über 2000 Meter. Im selben Jahr Ehrenpreis der Stadt Metzingen."
+    },
+    {
+      "datetime": "2018",
+      "label": "2018",
+      "isYear": true,
+      "title": "Zwei dritte Plätze beim SWHV",
+      "text": "Dritter Platz im CSC und dritter Platz im GL 2000 beim SWHV, dazu erneut der Ehrenpreis der Stadt Metzingen."
+    },
+    {
+      "datetime": "",
+      "label": "Verein",
+      "isYear": false,
+      "title": "Schutzdiensthelfer",
+      "text": "Tätigkeit als Schutzdiensthelfer im Verein. Wer regelmäßig im Anzug steht, lernt sehr genau, wie Hunde Druck aufbauen und wieder abbauen."
+    },
+    {
+      "datetime": "",
+      "label": "Nase",
+      "isYear": false,
+      "title": "Pet- und Man-Trail-Trainer",
+      "text": "Neunmonatige Ausbildung bei Pet Trailern in Österreich. Grundlage für die Arbeit an der individuellen Geruchsspur bei Personen- und Tiersuche."
+    },
+    {
+      "datetime": "",
+      "label": "Dienst",
+      "isYear": false,
+      "title": "Diensthundeführer",
+      "text": "Diensthundeführer im zivilen und militärischen Sicherheitsdienst. Arbeit unter echten Bedingungen, mit Hunden, bei denen Zuverlässigkeit nicht verhandelbar ist."
+    },
+    {
+      "datetime": "",
+      "label": "Köln",
+      "isYear": false,
+      "title": "Anderthalb Jahre Großrudel",
+      "text": "Betreuung und Führung von Hunden im Großrudel in einer der größten Hundetagesstätten Kölns. Dort entstand der Blick für Gruppendynamik, den ich heute beim Dogwalking brauche."
+    },
+    {
+      "datetime": "",
+      "label": "Trainer",
+      "isYear": false,
+      "title": "Hundetrainerausbildung bei Kynologisch",
+      "text": "Abgeschlossene Ausbildung zum Hundetrainer. Dazu Kenntnisse im Umgang mit Angst- und Problemhunden."
+    },
+    {
+      "datetime": "2023",
+      "label": "2023",
+      "isYear": true,
+      "title": "Mad Dogs Germany",
+      "text": "Gründung des eigenen Betriebs in Niederkassel: Dogwalking, Trailarbeit, Spürhunde- und Sporthundetraining."
+    }
+  ]
+}

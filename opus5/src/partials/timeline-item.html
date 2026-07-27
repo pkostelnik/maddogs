@@ -1,0 +1,8 @@
+<li data-reveal>
+  {{#if isYear}}<time datetime="{{datetime}}">{{label}}</time>{{/if}}
+  {{#unless isYear}}<span class="timeline__year">{{label}}</span>{{/unless}}
+  <div>
+    <h3>{{title}}</h3>
+    <p>{{text}}</p>
+  </div>
+</li>

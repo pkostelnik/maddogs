@@ -17,7 +17,7 @@
           <div class="page-head__inner">
             <nav class="breadcrumb" aria-label="Brotkrumennavigation">
               <ol>
-                <li><a href="/">Start</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><span aria-current="page">Ernährung</span></li>
               </ol>
             </nav>
@@ -182,7 +182,7 @@
               </p>
               <div class="cluster">
                 <a class="btn btn--ember" href="/kontakt/">Beratung anfragen</a>
-                <a class="btn btn--ghost" href="tel:+491733649143">0173 3649143</a>
+                <a class="btn btn--ghost" href="{{site.contact.phoneHref}}">{{site.contact.phone}}</a>
               </div>
             </div>
 
@@ -226,43 +226,8 @@
           </div>
 
           <div class="faq">
-            <details>
-              <summary>Wie bestelle ich das Futter?</summary>
-              <div>
-                Die Bestellung läuft über die Partnerschaft, nicht über den Shop
-                dieser Seite. Melde dich über das
-                <a href="/kontakt/">Kontaktformular</a> oder telefonisch, dann
-                klären wir den Weg.
-              </div>
-            </details>
-            <details>
-              <summary>Kostet die Beratung etwas?</summary>
-              <div>
-                Nein. Das Gespräch ist unverbindlich und kostenlos.
-              </div>
-            </details>
-            <details>
-              <summary>Ist ein Ergänzungsfuttermittel ein Medikament?</summary>
-              <div>
-                Nein. Es ist ein Futtermittel. Es ersetzt keine tierärztliche
-                Diagnose und keine Behandlung.
-              </div>
-            </details>
-            <details>
-              <summary>Muss ich komplett umstellen?</summary>
-              <div>
-                Nein. Manche Halter ergänzen nur, andere stellen die Hauptmahlzeit
-                um. Beides ist möglich.
-              </div>
-            </details>
-            <details>
-              <summary>Berätst du auch, wenn ich barfe?</summary>
-              <div>
-                <span class="badge badge--draft">Entwurf</span> Dieser Punkt ist
-                für den Prototyp angenommen und noch nicht bestätigt.
-              </div>
-            </details>
-          </div>
+                  <!--#each in="faq.ernaehrung" file="src/partials/faq-item.html" -->
+                </div>
         </div>
       </section>
 

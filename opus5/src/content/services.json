@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "index": "01 — Kernangebot",
+      "href": "/training/dogwalking/",
+      "title": "Dogwalking",
+      "text": "Professioneller Gassi-Service für anspruchsvolle Hunde. Kleine Gruppen, klare Führung, gezielte Auslastung für Körper und Kopf.",
+      "badgeClass": "badge--accent",
+      "badgeLabel": "ab 20 € / Stunde",
+      "image": "chris-fuehrt-malinois",
+      "alt": "Chris führt einen Malinois an lockerer Leine über eine Straße",
+      "featured": true,
+      "sizes": "(min-width: 64rem) 40vw, 100vw"
+    },
+    {
+      "index": "02",
+      "href": "/training/man-pet-trail/",
+      "title": "Man & Pet Trail",
+      "text": "Personen- und Tiersuche über die individuelle Geruchsspur. Nasenarbeit, die auslastet und die Bindung stärkt.",
+      "badgeClass": "badge--draft",
+      "badgeLabel": "Entwurf",
+      "image": null,
+      "alt": "",
+      "featured": false,
+      "sizes": "(min-width: 64rem) 40vw, 100vw"
+    },
+    {
+      "index": "03",
+      "href": "/training/spuerhunde/",
+      "title": "Spürhunde",
+      "text": "Geruchsdifferenzierung und Anzeigeverhalten – der Einstieg in echte Detektionsarbeit, aufgebaut über positive Verstärkung.",
+      "badgeClass": "badge--draft",
+      "badgeLabel": "Entwurf",
+      "image": null,
+      "alt": "",
+      "featured": false,
+      "sizes": "(min-width: 64rem) 40vw, 100vw"
+    },
+    {
+      "index": "04",
+      "href": "/training/sporthunde/",
+      "title": "Sporthunde",
+      "text": "Turnierhundesport von Grund auf: Geländelauf, Vierkampf, Hindernislauf. Für Teams, die es ernst meinen.",
+      "badgeClass": "badge--draft",
+      "badgeLabel": "Entwurf",
+      "image": null,
+      "alt": "",
+      "featured": false,
+      "sizes": "(min-width: 64rem) 40vw, 100vw"
+    }
+  ]
+}

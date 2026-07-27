@@ -17,7 +17,7 @@
           <div class="page-head__inner">
             <nav class="breadcrumb" aria-label="Brotkrumennavigation">
               <ol>
-                <li><a href="/">Start</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><span aria-current="page">Kontakt</span></li>
               </ol>
             </nav>
@@ -193,7 +193,7 @@
               <h3 class="card__title">WhatsApp</h3>
               <p class="card__text">Der schnellste Weg. Kurze Nachricht reicht.</p>
               <p class="card__foot">
-                <a class="btn btn--ember" href="https://wa.me/491733649143" rel="noopener">
+                <a class="btn btn--ember" href="{{site.contact.whatsapp}}" rel="noopener">
                   <span class="ext-hint">Chat öffnen</span>
                   <span class="visually-hidden">Öffnet WhatsApp, ein externes Angebot</span>
                 </a>
@@ -204,7 +204,7 @@
               <h3 class="card__title">Telefon</h3>
               <p class="card__text">Für alles, was sich besser sprechen als schreiben lässt.</p>
               <p class="card__foot">
-                <a class="btn btn--ghost" href="tel:+491733649143">0173 3649143</a>
+                <a class="btn btn--ghost" href="{{site.contact.phoneHref}}">{{site.contact.phone}}</a>
               </p>
             </li>
 
@@ -212,7 +212,7 @@
               <h3 class="card__title">E-Mail</h3>
               <p class="card__text">Für ausführliche Anfragen und Unterlagen.</p>
               <p class="card__foot">
-                <a class="btn btn--ghost" href="mailto:info@mad-dogs-germany.de">
+                <a class="btn btn--ghost" href="{{site.contact.emailHref}}">
                   info@mad-dogs-germany.de
                 </a>
               </p>

@@ -1,0 +1,20 @@
+<li data-tags="{{tagList}}">
+  <article class="product">
+    <div class="product__media product__media--blank">
+      <span class="product__mark" aria-hidden="true">MD</span>
+      <span class="visually-hidden">Kein Produktbild vorhanden</span>
+    </div>
+    <h3 class="product__name">{{name}}</h3>
+    <p class="product__meta">{{meta}}</p>
+    <p class="product__price">
+      <span class="visually-hidden">Beispielpreis</span>{{price}}
+    </p>
+    {{#if draft}}
+    <p><span class="badge badge--draft">Beispieldaten</span></p>
+    {{/if}}
+    <a class="btn btn--ghost ext-hint" href="{{site.external.shop}}" rel="noopener">
+      Im Shop ansehen
+      <span class="visually-hidden">– öffnet den externen Shop</span>
+    </a>
+  </article>
+</li>

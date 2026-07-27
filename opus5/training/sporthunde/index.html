@@ -38,7 +38,7 @@
           <div class="page-head__inner">
             <nav class="breadcrumb" aria-label="Brotkrumennavigation">
               <ol>
-                <li><a href="/">Start</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><a href="/training/">Training</a></li>
                 <li><span aria-current="page">Sporthunde</span></li>
               </ol>
@@ -144,48 +144,7 @@
                 <p class="eyebrow">Häufige Fragen</p>
                 <h3>Gut zu wissen</h3>
                 <div class="faq">
-                  <details>
-                    <summary>Muss ich selbst sportlich sein?</summary>
-                    <div>
-                      Für den Geländelauf und den CSC ja. Zwei Kilometer im Gelände
-                      läufst du mit. Für den Vierkampf reicht solide Grundfitness,
-                      weil dort Technik und Präzision stärker zählen als Tempo.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Welche Hunde eignen sich?</summary>
-                    <div>
-                      Fast alle mittelgroßen und großen Hunde mit gesunden Gelenken.
-                      Sprünge sind erst nach abgeschlossenem Wachstum sinnvoll, in der
-                      Regel ab etwa 15 Monaten. Kurznasige Rassen sind für Laufsport
-                      ungeeignet.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Brauche ich eine Vereinsmitgliedschaft?</summary>
-                    <div>
-                      Fürs Training nicht. Für offizielle Turnierstarts schon, weil
-                      Startbücher und Leistungsurkunden über den Verband laufen. Ich
-                      sage dir, welcher Verein in deiner Nähe passt.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Wie oft sollten wir trainieren?</summary>
-                    <div>
-                      Zwei bis drei Einheiten pro Woche, davon höchstens eine mit
-                      Sprüngen. Der Rest ist Lauf und Unterordnung. Mehr bringt
-                      selten mehr, sondern führt zu Überlastung.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Was ist der Combinationsspeedcup genau?</summary>
-                    <div>
-                      Eine Mannschaftsdisziplin über eine Strecke mit Hürden und
-                      Slalom, gelaufen als Staffel. Entscheidend sind saubere
-                      Übergaben und konstante Zeiten aller Starter, nicht ein
-                      einzelner schneller Lauf.
-                    </div>
-                  </details>
+                  <!--#each in="faq.training-sporthunde" file="src/partials/faq-item.html" -->
                 </div>
               </div>
             </div>
@@ -223,11 +182,11 @@
                 </div>
                 <div>
                   <dt>Kontakt</dt>
-                  <dd><a href="tel:+491733649143">0173 3649143</a></dd>
+                  <dd><a href="{{site.contact.phoneHref}}">{{site.contact.phone}}</a></dd>
                 </div>
               </dl>
 
-              <a class="btn btn--ember btn--block" href="https://wa.me/491733649143" rel="noopener">
+              <a class="btn btn--ember btn--block" href="{{site.contact.whatsapp}}" rel="noopener">
                 Termin per WhatsApp
                 <span class="visually-hidden">, öffnet ein externes Angebot</span>
               </a>

@@ -1,0 +1,15 @@
+<article class="card{{#if featured}} card--roomy{{/if}}" data-reveal>
+  {{#if featured}}
+  <div class="card__media">
+    <!--#include file="src/partials/picture.html" -->
+  </div>
+  {{/if}}
+  <p class="card__index">{{index}}</p>
+  <h3 class="card__title">
+    <a class="card__link" href="{{href}}">{{title}}</a>
+  </h3>
+  <p class="card__text">{{text}}</p>
+  {{#if badgeLabel}}
+  <p class="card__foot"><span class="badge {{badgeClass}}">{{badgeLabel}}</span></p>
+  {{/if}}
+</article>

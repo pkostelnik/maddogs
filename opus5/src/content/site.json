@@ -1,0 +1,41 @@
+{
+  "name": "Mad Dogs Germany",
+  "shortName": "Mad Dogs",
+  "claim": "Search & Workingdogs",
+  "founded": "2023",
+  "tagline": "Gassi mit Köpfchen",
+  "contact": {
+    "phone": "0173 3649143",
+    "phoneHref": "tel:+491733649143",
+    "whatsapp": "https://wa.me/491733649143",
+    "email": "info@mad-dogs-germany.de",
+    "emailHref": "mailto:info@mad-dogs-germany.de",
+    "instagram": "https://www.instagram.com/mad_dogs_germany/",
+    "instagramHandle": "mad_dogs_germany"
+  },
+  "location": {
+    "city": "Niederkassel",
+    "region": "NRW",
+    "country": "DE",
+    "areaServed": "Niederkassel und Umgebung"
+  },
+  "external": {
+    "shop": "https://www.mad-dogs-germany.de/mad-dogs-shop-/",
+    "spreadshop": "https://mad-dogs-germany.myspreadshop.de/"
+  },
+  "dogwalking": {
+    "maxGroupSize": 10,
+    "prices": [
+      { "duration": "1 Stunde", "price": "20 €" },
+      { "duration": "1,5 Stunden", "price": "25 €" },
+      { "duration": "2 Stunden", "price": "30 €" }
+    ],
+    "priceFrom": "ab 20 € / Stunde"
+  },
+  "stats": [
+    { "value": "16", "label": "Jahre Hundeführung, quer durch alle Rassen" },
+    { "value": "70+", "label": "Turnierstarts im Turnierhundesport" },
+    { "value": "10", "label": "Hunde maximal pro Gruppe – nie mehr" },
+    { "value": "1,5", "label": "Jahre Großrudel-Betreuung in einer Kölner HuTa" }
+  ]
+}

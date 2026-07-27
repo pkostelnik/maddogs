@@ -38,7 +38,7 @@
           <div class="page-head__inner">
             <nav class="breadcrumb" aria-label="Brotkrumennavigation">
               <ol>
-                <li><a href="/">Start</a></li>
+                <li><a href="/">Startseite</a></li>
                 <li><a href="/training/">Training</a></li>
                 <li><span aria-current="page">Spürhunde</span></li>
               </ol>
@@ -147,53 +147,7 @@
                 <p class="eyebrow">Häufige Fragen</p>
                 <h3>Gut zu wissen</h3>
                 <div class="faq">
-                  <details>
-                    <summary>Aktive oder passive Anzeige – was ist besser?</summary>
-                    <div>
-                      Keins von beidem grundsätzlich. Passiv heißt Sitzen, Stehen
-                      oder Ablegen am Fundort und ist überall dort richtig, wo nichts
-                      berührt werden darf. Aktiv heißt Scharren oder Verbellen und ist
-                      im unübersichtlichen Gelände oft besser sichtbar. Entscheidend
-                      ist, dass die Anzeige eindeutig und stabil ist.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Warum trainiert ihr mit Blindtests?</summary>
-                    <div>
-                      Weil Hunde uns lesen. Wenn du weißt, wo das Versteck liegt,
-                      verlangsamst du unbewusst, drehst die Schultern oder hältst den
-                      Atem an. Der Hund zeigt dann deine Erwartung an, nicht den
-                      Geruch. Dieser Clever-Hans-Effekt ist gut dokumentiert und die
-                      häufigste Fehlerquelle in der Spürhundearbeit.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Warum ausschließlich positive Verstärkung?</summary>
-                    <div>
-                      Weil Druck die Suchfreude bremst. Ein Hund, der Fehler fürchtet,
-                      hört auf, sich festzulegen, oder zeigt vorsichtshalber überall
-                      an. Beides zerstört die Verlässlichkeit. Unbelohnte
-                      Fehlanzeigen reichen als Information völlig aus.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Welche Gerüche kann man aufbauen?</summary>
-                    <div>
-                      Technisch jeden klar abgrenzbaren Zielgeruch. Im Training
-                      arbeiten wir mit unbedenklichen Ersatzstoffen. Was rechtlich
-                      geregelt ist, etwa im Bereich Betäubungsmittel oder
-                      Sprengstoff, gehört ausschließlich in behördliche Ausbildung.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Wie lange dauert der Aufbau?</summary>
-                    <div>
-                      Bis zur ersten sauberen Anzeige unter einfachen Bedingungen
-                      meist einige Wochen. Bis zu belastbaren Ergebnissen im
-                      Blindtest deutlich länger. Wer schneller fertig sein will,
-                      trainiert am Ende auf sich selbst statt auf den Geruch.
-                    </div>
-                  </details>
+                  <!--#each in="faq.training-spuerhunde" file="src/partials/faq-item.html" -->
                 </div>
               </div>
             </div>
@@ -231,11 +185,11 @@
                 </div>
                 <div>
                   <dt>Kontakt</dt>
-                  <dd><a href="tel:+491733649143">0173 3649143</a></dd>
+                  <dd><a href="{{site.contact.phoneHref}}">{{site.contact.phone}}</a></dd>
                 </div>
               </dl>
 
-              <a class="btn btn--ember btn--block" href="https://wa.me/491733649143" rel="noopener">
+              <a class="btn btn--ember btn--block" href="{{site.contact.whatsapp}}" rel="noopener">
                 Termin per WhatsApp
                 <span class="visually-hidden">, öffnet ein externes Angebot</span>
               </a>

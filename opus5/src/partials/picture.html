@@ -1,0 +1,13 @@
+<picture>
+  <source type="image/avif" srcset="{{{images.[image].srcsetAvif}}}" sizes="{{sizes}}" />
+  <source type="image/webp" srcset="{{{images.[image].srcsetWebp}}}" sizes="{{sizes}}" />
+  <img
+    src="{{images.[image].fallback}}"
+    width="{{images.[image].width}}"
+    height="{{images.[image].height}}"
+    alt="{{alt}}"
+    {{#if eager}}fetchpriority="high"{{/if}}
+    {{#unless eager}}loading="lazy"{{/unless}}
+    decoding="async"
+  />
+</picture>

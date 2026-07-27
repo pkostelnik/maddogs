@@ -1,0 +1,112 @@
+{
+  "training-dogwalking": [
+    {
+      "question": "Nimmst du auch Hunde mit Leinenaggression?",
+      "answer": "In vielen Fällen ja. Entscheidend ist, was genau passiert und wie berechenbar dein Hund ist. Das klären wir bei der Proberunde – notfalls starten wir im Einzelgang und integrieren später in die Gruppe."
+    },
+    {
+      "question": "Wie groß sind die Gruppen wirklich?",
+      "answer": "Maximal zehn Hunde, zusammengestellt nach Größe, Temperament und Verträglichkeit. Kein wahlloses Zusammenwürfeln."
+    },
+    {
+      "question": "Was passiert bei schlechtem Wetter?",
+      "answer": "Wir gehen. Nur bei Gewitter, Sturm oder extremer Hitze wird verschoben – dann melde ich mich rechtzeitig."
+    },
+    {
+      "question": "Brauche ich eine Hundehaftpflicht?",
+      "answer": "Ja, eine gültige Haftpflichtversicherung ist Voraussetzung. Ebenso ein aktueller Impfschutz."
+    },
+    {
+      "question": "Wie weit fährst du?",
+      "answer": "Niederkassel und direkte Umgebung. Bei größerer Entfernung frag einfach nach – manchmal lässt es sich einrichten."
+    }
+  ],
+  "training-man-pet-trail": [
+    {
+      "question": "Was ist der Unterschied zwischen Mantrailing und Fährtenarbeit?",
+      "answer": "Bei der Fährte folgt der Hund der Bodenverletzung, also den zertretenen Pflanzen und der aufgebrochenen Erde. Beim Trailing folgt er dem individuellen Geruch einer bestimmten Person. Er kann deshalb auch über Asphalt arbeiten und Abkürzungen im Wind nutzen."
+    },
+    {
+      "question": "Wie muss ein Geruchsartikel aussehen?",
+      "answer": "Am besten ein Gegenstand mit langem Hautkontakt: getragene Socke, Kopfkissenbezug, Halsband des Tieres. Fass ihn möglichst nicht mit bloßen Händen an und pack ihn in eine saubere Papier- oder Zipptüte. Je weniger Fremdgeruch, desto klarer die Aufgabe."
+    },
+    {
+      "question": "Warum ist die Windrichtung so wichtig?",
+      "answer": "Geruch bleibt selten genau dort liegen, wo die Person gelaufen ist. Er verweht, sammelt sich an Hauswänden und in Senken. Wenn du den Wind liest, verstehst du, warum dein Hund versetzt arbeitet – und ziehst ihn nicht fälschlich zurück."
+    },
+    {
+      "question": "Was ist eine Negativanzeige?",
+      "answer": "Der Hund zeigt dir am Startpunkt an, dass der Zielgeruch dort gar nicht vorhanden ist. Ohne diese Fähigkeit läuft ein Hund irgendeine Spur, nur um zu arbeiten. Das ist im Ernstfall wertlos und kostet Zeit."
+    },
+    {
+      "question": "Wie alt darf eine Spur sein?",
+      "answer": "Das hängt von Wetter, Untergrund und Ausbildungsstand ab. Anfänger arbeiten frische Spuren von wenigen Minuten. Fortgeschrittene Teams schaffen mehrere Stunden bis Tage. Feste Zusagen macht dir dazu niemand seriös."
+    }
+  ],
+  "training-sporthunde": [
+    {
+      "question": "Muss ich selbst sportlich sein?",
+      "answer": "Für den Geländelauf und den CSC ja. Zwei Kilometer im Gelände läufst du mit. Für den Vierkampf reicht solide Grundfitness, weil dort Technik und Präzision stärker zählen als Tempo."
+    },
+    {
+      "question": "Welche Hunde eignen sich?",
+      "answer": "Fast alle mittelgroßen und großen Hunde mit gesunden Gelenken. Sprünge sind erst nach abgeschlossenem Wachstum sinnvoll, in der Regel ab etwa 15 Monaten. Kurznasige Rassen sind für Laufsport ungeeignet."
+    },
+    {
+      "question": "Brauche ich eine Vereinsmitgliedschaft?",
+      "answer": "Fürs Training nicht. Für offizielle Turnierstarts schon, weil Startbücher und Leistungsurkunden über den Verband laufen. Ich sage dir, welcher Verein in deiner Nähe passt."
+    },
+    {
+      "question": "Wie oft sollten wir trainieren?",
+      "answer": "Zwei bis drei Einheiten pro Woche, davon höchstens eine mit Sprüngen. Der Rest ist Lauf und Unterordnung. Mehr bringt selten mehr, sondern führt zu Überlastung."
+    },
+    {
+      "question": "Was ist der Combinationsspeedcup genau?",
+      "answer": "Eine Mannschaftsdisziplin über eine Strecke mit Hürden und Slalom, gelaufen als Staffel. Entscheidend sind saubere Übergaben und konstante Zeiten aller Starter, nicht ein einzelner schneller Lauf."
+    }
+  ],
+  "training-spuerhunde": [
+    {
+      "question": "Aktive oder passive Anzeige – was ist besser?",
+      "answer": "Keins von beidem grundsätzlich. Passiv heißt Sitzen, Stehen oder Ablegen am Fundort und ist überall dort richtig, wo nichts berührt werden darf. Aktiv heißt Scharren oder Verbellen und ist im unübersichtlichen Gelände oft besser sichtbar. Entscheidend ist, dass die Anzeige eindeutig und stabil ist."
+    },
+    {
+      "question": "Warum trainiert ihr mit Blindtests?",
+      "answer": "Weil Hunde uns lesen. Wenn du weißt, wo das Versteck liegt, verlangsamst du unbewusst, drehst die Schultern oder hältst den Atem an. Der Hund zeigt dann deine Erwartung an, nicht den Geruch. Dieser Clever-Hans-Effekt ist gut dokumentiert und die häufigste Fehlerquelle in der Spürhundearbeit."
+    },
+    {
+      "question": "Warum ausschließlich positive Verstärkung?",
+      "answer": "Weil Druck die Suchfreude bremst. Ein Hund, der Fehler fürchtet, hört auf, sich festzulegen, oder zeigt vorsichtshalber überall an. Beides zerstört die Verlässlichkeit. Unbelohnte Fehlanzeigen reichen als Information völlig aus."
+    },
+    {
+      "question": "Welche Gerüche kann man aufbauen?",
+      "answer": "Technisch jeden klar abgrenzbaren Zielgeruch. Im Training arbeiten wir mit unbedenklichen Ersatzstoffen. Was rechtlich geregelt ist, etwa im Bereich Betäubungsmittel oder Sprengstoff, gehört ausschließlich in behördliche Ausbildung."
+    },
+    {
+      "question": "Wie lange dauert der Aufbau?",
+      "answer": "Bis zur ersten sauberen Anzeige unter einfachen Bedingungen meist einige Wochen. Bis zu belastbaren Ergebnissen im Blindtest deutlich länger. Wer schneller fertig sein will, trainiert am Ende auf sich selbst statt auf den Geruch."
+    }
+  ],
+  "ernaehrung": [
+    {
+      "question": "Wie bestelle ich das Futter?",
+      "answer": "Die Bestellung läuft über die Partnerschaft, nicht über den Shop dieser Seite. Melde dich über das <a href=\"/kontakt/\">Kontaktformular</a> oder telefonisch, dann klären wir den Weg."
+    },
+    {
+      "question": "Kostet die Beratung etwas?",
+      "answer": "Nein. Das Gespräch ist unverbindlich und kostenlos."
+    },
+    {
+      "question": "Ist ein Ergänzungsfuttermittel ein Medikament?",
+      "answer": "Nein. Es ist ein Futtermittel. Es ersetzt keine tierärztliche Diagnose und keine Behandlung."
+    },
+    {
+      "question": "Muss ich komplett umstellen?",
+      "answer": "Nein. Manche Halter ergänzen nur, andere stellen die Hauptmahlzeit um. Beides ist möglich."
+    },
+    {
+      "question": "Berätst du auch, wenn ich barfe?",
+      "answer": "<span class=\"badge badge--draft\">Entwurf</span> Dieser Punkt ist für den Prototyp angenommen und noch nicht bestätigt."
+    }
+  ]
+}
