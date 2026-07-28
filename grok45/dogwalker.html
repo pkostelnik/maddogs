@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dogwalker-Service | Mad Dogs Germany</title>
+    <meta
+      name="description"
+      content="Professioneller Gassi-Service in Niederkassel: strukturierte Auslastung, klare Führung und Gruppen bis 10 Hunde — 1h 20 €, 1,5h 25 €, 2h 30 €."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header" data-header>
+      <div class="site-header__inner container">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true">MD</span>
+          <span class="logo__text">Mad Dogs <span>Germany</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menü öffnen</span>
+        </button>
+        <nav id="site-nav" class="site-nav" data-nav aria-label="Hauptnavigation">
+          <ul class="site-nav__list">
+            <li><a href="index.html" data-nav-link>Start</a></li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-services"
+              >
+                Services
+              </button>
+              <ul id="sub-services" class="sub-menu" data-sub-menu hidden>
+                <li><a href="dogwalker.html" aria-current="page">Dogwalker</a></li>
+                <li><a href="trail.html">Man / Pet Trail</a></li>
+                <li><a href="spuerhunde.html">Spürhunde</a></li>
+                <li><a href="sporthunde.html">Sporthunde</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-shop"
+              >
+                Shop
+              </button>
+              <ul id="sub-shop" class="sub-menu" data-sub-menu hidden>
+                <li><a href="shop.html">Shop-Übersicht</a></li>
+                <li><a href="reico.html">Reico Hundefutter</a></li>
+                <li><a href="bekleidung.html">Bekleidung</a></li>
+              </ul>
+            </li>
+            <li><a href="ueber-uns.html" data-nav-link>Über uns</a></li>
+            <li><a href="stimmen.html" data-nav-link>Stimmen</a></li>
+            <li><a class="btn btn--primary btn--nav" href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <div class="site-nav__utils">
+            <a href="tel:+491733649143">0173 3649143</a>
+            <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/mad_dogs_germany/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="hero__eyebrow">Dogwalker · Niederkassel &amp; Umgebung</p>
+          <h1>Professioneller Gassi-Service — strukturierte Auslastung</h1>
+          <p class="lead">
+            Mehr als ein Spaziergang: klare Führung, passende Gruppen und echte Arbeit für Körper
+            und Kopf — auch für Hunde mit viel Energie und Charakter.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/491733649143"
+              rel="noopener noreferrer"
+              target="_blank"
+              >WhatsApp</a
+            >
+            <a class="btn btn--secondary" href="tel:+491733649143">0173 3649143 anrufen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="fit-heading">
+        <div class="container grid-2">
+          <article class="card">
+            <h2 id="fit-heading" class="card__title">Ideal für Hunde, die …</h2>
+            <ul>
+              <li>viel Energie haben</li>
+              <li>an der Leine ziehen</li>
+              <li>bei Begegnungen aufdrehen</li>
+              <li>klare Regeln und echte Auslastung brauchen</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h2 class="card__title">Was dein Hund bekommt</h2>
+            <ul>
+              <li>ruhige, konsequente Führung</li>
+              <li>gezielte Auslastung für Körper und Kopf</li>
+              <li>Spaziergänge in passenden Gruppen mit bis zu 10 Hunden</li>
+              <li>soziales Training und Reizkontrolle unterwegs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="cred-heading">
+        <div class="container">
+          <header class="section__header">
+            <h2 id="cred-heading">Erfahrung statt Show</h2>
+            <p class="lead">
+              16 Jahre Umgang mit Hunden — Hundesport, Hundetagesstätte Köln (HuTa), Diensthund und
+              der Weg zum Trainer prägen den Alltag im Dogwalker-Service.
+            </p>
+          </header>
+          <div class="grid-2">
+            <article class="card">
+              <h3 class="card__title">Sport &amp; Praxis</h3>
+              <p class="card__body">
+                Langjährige Sportpraxis und Turniererfahrung fließen in ruhige Führung und faire
+                Belastung ein — ohne Chaos am Band.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Rudel &amp; Dienst</h3>
+              <p class="card__body">
+                Mitarbeit in einer großen Hundetagesstätte in Köln und Tätigkeit als
+                Diensthundeführer: passende Gruppen, klare Abläufe, sicherer Rahmen.
+              </p>
+            </article>
+          </div>
+          <p style="margin-top: var(--space-5)">
+            <a href="ueber-uns.html">Mehr über Chris und Mad Dogs</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="preise" aria-labelledby="price-heading">
+        <div class="container">
+          <header class="section__header">
+            <h2 id="price-heading">Preise</h2>
+            <p class="lead">
+              Gruppenspaziergänge im Dogwalker-Service. Details werden vorab persönlich abgestimmt.
+            </p>
+          </header>
+          <div class="card" style="max-width: 28rem">
+            <table class="price-table">
+              <caption class="visually-hidden">
+                Preise Dogwalker-Service
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Dauer</th>
+                  <th scope="col">Preis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1 Stunde</th>
+                  <td>20 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">1,5 Stunden</th>
+                  <td>25 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">2 Stunden</th>
+                  <td>30 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top: var(--space-4); color: var(--color-text-muted)">
+            Standort: Niederkassel und Umgebung. Kontakt bevorzugt per WhatsApp oder Anruf.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/491733649143"
+              rel="noopener noreferrer"
+              target="_blank"
+              >WhatsApp</a
+            >
+            <a class="btn btn--secondary" href="tel:+491733649143">Anrufen</a>
+            <a class="btn btn--ghost" href="kontakt.html">Kontaktformular</a>
+            <a class="btn btn--ghost" href="galerie.html">Galerie</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-labelledby="cta-heading">
+        <div class="container cta-band__inner">
+          <div>
+            <h2 id="cta-heading">Proberunde vereinbaren?</h2>
+            <p class="lead" style="margin: 0">
+              Kurz per WhatsApp oder Anruf — Niederkassel und Umgebung.
+            </p>
+          </div>
+          <div class="hero__actions" style="margin-top: 0">
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/491733649143"
+              rel="noopener noreferrer"
+              target="_blank"
+              >WhatsApp</a
+            >
+            <a class="btn btn--secondary" href="tel:+491733649143">0173 3649143</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid container">
+        <div>
+          <p class="footer-brand">Mad Dogs Germany</p>
+          <p>
+            Professionelle Hundeauslastung, Trail &amp; Ausrüstung — Niederkassel und Umgebung.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="dogwalker.html">Dogwalker</a></li>
+            <li><a href="trail.html">Man / Pet Trail</a></li>
+            <li><a href="spuerhunde.html">Spürhunde</a></li>
+            <li><a href="sporthunde.html">Sporthunde</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul>
+            <li><a href="shop.html">Shop-Übersicht</a></li>
+            <li><a href="reico.html">Reico</a></li>
+            <li><a href="bekleidung.html">Bekleidung</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Kontakt</p>
+          <ul>
+            <li><a href="tel:+491733649143">0173 3649143</a></li>
+            <li><a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a></li>
+            <li>
+              <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom container">
+        <nav aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="agb.html">AGB</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p>© <span data-year></span> Mad Dogs Germany. Prototyp-Relaunch.</p>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
