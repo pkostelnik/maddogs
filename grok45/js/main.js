@@ -15,10 +15,17 @@
 
   let lastFocus = null;
 
-  function getFocusable() {
+  function getNavFocusable() {
     return Array.from(nav.querySelectorAll(focusableSelector)).filter(
       (el) => !el.hasAttribute("disabled") && el.offsetParent !== null
     );
+  }
+
+  /** While open: toggle (close control) + nav items so Tab can reach "Menü schließen". */
+  function getFocusable() {
+    const navItems = getNavFocusable();
+    if (!isOpen()) return navItems;
+    return [toggle, ...navItems];
   }
 
   function openNav() {
@@ -27,7 +34,7 @@
     toggle.setAttribute("aria-expanded", "true");
     const label = toggle.querySelector(".visually-hidden");
     if (label) label.textContent = "Menü schließen";
-    const items = getFocusable();
+    const items = getNavFocusable();
     if (items[0]) items[0].focus();
   }
 

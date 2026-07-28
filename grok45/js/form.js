@@ -11,7 +11,11 @@
     const input = field.querySelector("input, textarea");
     const err = field.querySelector(".error");
     field.classList.toggle("is-invalid", Boolean(message));
-    if (err) err.textContent = message || "";
+    if (err) {
+      err.textContent = message || "";
+      if (message) err.setAttribute("role", "alert");
+      else err.removeAttribute("role");
+    }
     if (input) {
       if (message) input.setAttribute("aria-invalid", "true");
       else input.removeAttribute("aria-invalid");
