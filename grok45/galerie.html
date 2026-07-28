@@ -50,10 +50,15 @@
         outline: none;
         box-shadow: var(--focus-ring);
       }
-      .gallery-item .media-ph {
+      .gallery-item .media-frame {
         width: 100%;
-        background-size: cover;
-        background-position: center;
+      }
+      .gallery-item .media-frame img {
+        transition: transform var(--dur) var(--ease);
+      }
+      .gallery-item:hover .media-frame img,
+      .gallery-item:focus-visible .media-frame img {
+        transform: scale(1.03);
       }
       .gallery-item__caption {
         display: block;
@@ -74,8 +79,14 @@
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
     <header class="site-header" data-header>
       <div class="site-header__inner container">
-        <a class="logo" href="index.html">
-          <span class="logo__mark" aria-hidden="true">MD</span>
+                <a class="logo" href="index.html">
+          <img
+            class="logo__img"
+            src="assets/images/original/logo-192.jpg"
+            width="40"
+            height="40"
+            alt="Mad Dogs Germany"
+          />
           <span class="logo__text">Mad Dogs <span>Germany</span></span>
         </a>
         <button
@@ -176,16 +187,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-1.svg"
-                data-alt="Waldspaziergang mit Hund"
+                data-full="assets/images/original/gallery-1.jpg"
+                data-alt="Hunde unterwegs"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-1.svg')"
-                  data-label="Wald"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Waldspaziergang</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-1.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Unterwegs</span>
               </button>
             </li>
             <li>
@@ -193,16 +201,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-2.svg"
-                data-alt="Man / Pet Trail Training"
+                data-full="assets/images/original/gallery-2.jpg"
+                data-alt="Gassi mit Struktur"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-2.svg')"
-                  data-label="Trail"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Trail-Training</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-2.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Struktur</span>
               </button>
             </li>
             <li>
@@ -210,16 +215,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-3.svg"
-                data-alt="Gruppenrunde mit mehreren Hunden"
+                data-full="assets/images/original/gallery-3.jpg"
+                data-alt="Gruppenrunde"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-3.svg')"
-                  data-label="Gruppe"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Gruppenrunde</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-3.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Gruppe</span>
               </button>
             </li>
             <li>
@@ -227,16 +229,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-4.svg"
-                data-alt="Spürhunde-Arbeit"
+                data-full="assets/images/original/gallery-4.jpg"
+                data-alt="Training und Alltag"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-4.svg')"
-                  data-label="Spür"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Spürarbeit</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-4.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Training</span>
               </button>
             </li>
             <li>
@@ -244,16 +243,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-5.svg"
-                data-alt="Leinenführung im Training"
+                data-full="assets/images/original/gallery-5.jpg"
+                data-alt="Leinenführung"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-5.svg')"
-                  data-label="Leine"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Leinenführung</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-5.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Leine</span>
               </button>
             </li>
             <li>
@@ -261,16 +257,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-6.svg"
-                data-alt="Feldrunde im Freien"
+                data-full="assets/images/original/gallery-6.jpg"
+                data-alt="Feldrunde"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-6.svg')"
-                  data-label="Feld"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Feldrunde</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-6.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Feld</span>
               </button>
             </li>
             <li>
@@ -278,16 +271,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-7.svg"
-                data-alt="Sportplatz-Training"
+                data-full="assets/images/original/gallery-7.jpg"
+                data-alt="Sport und Auslastung"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-7.svg')"
-                  data-label="Sport"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Sportplatz</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-7.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Sport</span>
               </button>
             </li>
             <li>
@@ -295,16 +285,13 @@
                 type="button"
                 class="gallery-item"
                 data-gallery-item
-                data-full="assets/images/placeholders/gallery-8.svg"
-                data-alt="Pause am Wasser"
+                data-full="assets/images/original/gallery-8.jpg"
+                data-alt="Pause und Fokus"
               >
-                <span
-                  class="media-ph"
-                  style="background-image: url('assets/images/placeholders/gallery-8.svg')"
-                  data-label="Wasser"
-                  aria-hidden="true"
-                ></span>
-                <span class="gallery-item__caption">Pause am Wasser</span>
+                <span class="media-frame media-frame--square" aria-hidden="true">
+                  <img src="assets/images/original/gallery-8.jpg" alt="" loading="lazy" width="400" height="400" />
+                </span>
+                <span class="gallery-item__caption">Pause</span>
               </button>
             </li>
           </ul>

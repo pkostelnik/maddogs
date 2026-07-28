@@ -74,6 +74,16 @@
   flex-shrink: 0;
 }
 
+.logo__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
 /* Nav toggle — mobile only */
 .nav-toggle {
   display: inline-flex;
@@ -316,10 +326,15 @@ body.lightbox-open {
 
 .page-hero h1 {
   margin: 0 0 var(--space-3);
+  max-width: 22ch;
 }
 
 .page-hero .lead {
   margin: 0;
+}
+
+.page-hero .hero__inner {
+  align-items: center;
 }
 
 /* Footer */

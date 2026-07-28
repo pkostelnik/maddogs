@@ -1,18 +1,21 @@
-# Image assets checklist
+# Images
 
-Replace placeholders with final photography before launch.
+## Originals (`original/`)
 
-- [ ] Logo (primary wordmark / mark)
-- [ ] Hero outdoor / work-dog
-- [ ] Chris portrait
-- [ ] Gallery photo 1
-- [ ] Gallery photo 2
-- [ ] Gallery photo 3
-- [ ] Gallery photo 4
-- [ ] Gallery photo 5
-- [ ] Gallery photo 6
-- [ ] Gallery photo 7
-- [ ] Gallery photo 8
-- [ ] Shop category thumbs
-- [ ] Reico pack shot
-- [ ] Merch flat-lay
+Downloaded from the live site https://www.mad-dogs-germany.de for this prototype.
+
+| File | Use |
+|------|-----|
+| `logo.jpg` / `logo-192.jpg` | Brand mark, header logo |
+| `hero-dogs.jpg` | Home + dogwalker hero |
+| `hero-home.jpg` | Alternate home visual (available) |
+| `about.jpg` | Über uns / trust section |
+| `trail.jpg` | Trail + Spürhunde |
+| `reico.png` | Reico partner |
+| `gallery-1.jpg` … `gallery-8.jpg` | Galerie + lightbox |
+| `stimmen-1.jpg` … `stimmen-3.jpg` | Testimonial avatars |
+| `favicon-src.png` | Source for favicon if needed |
+
+## Placeholders
+
+SVG placeholders under `placeholders/` are legacy; gallery now uses originals.

@@ -24,8 +24,14 @@
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
     <header class="site-header" data-header>
       <div class="site-header__inner container">
-        <a class="logo" href="index.html">
-          <span class="logo__mark" aria-hidden="true">MD</span>
+                <a class="logo" href="index.html">
+          <img
+            class="logo__img"
+            src="assets/images/original/logo-192.jpg"
+            width="40"
+            height="40"
+            alt="Mad Dogs Germany"
+          />
           <span class="logo__text">Mad Dogs <span>Germany</span></span>
         </a>
         <button
@@ -111,12 +117,15 @@
               <a class="btn btn--secondary" href="shop.html">Zum Shop</a>
             </div>
           </div>
-          <div
-            class="media-ph"
-            data-label="Foto: Trail / Arbeitshund ersetzen"
-            role="img"
-            aria-label="Platzhalter: Trail- oder Arbeitshund-Foto"
-          ></div>
+          <figure class="media-frame media-frame--hero">
+            <img
+              src="assets/images/original/hero-dogs.jpg"
+              width="1200"
+              height="816"
+              alt="Hunde unterwegs mit Mad Dogs Germany"
+              fetchpriority="high"
+            />
+          </figure>
         </div>
       </section>
 
@@ -247,17 +256,24 @@
               Chris bringt Sportpraxis, Trail-Ausbildung und den Alltag als Dogwalker und
               Diensthundeführer zusammen — ohne Show, mit klaren Ansagen für Hund und Halter.
             </p>
-            <p>
-              <a href="ueber-uns.html">Mehr über Mad Dogs und Chris</a>
-            </p>
-          </div>
-          <div>
             <p class="chip-row" aria-label="Schwerpunkte und Hintergrund">
               <span class="badge">THS</span>
               <span class="badge">Trail Trainer</span>
               <span class="badge">Diensthund</span>
             </p>
+            <p>
+              <a href="ueber-uns.html">Mehr über Mad Dogs und Chris</a>
+            </p>
           </div>
+          <figure class="media-frame media-frame--portrait">
+            <img
+              src="assets/images/original/about.jpg"
+              width="640"
+              height="853"
+              alt="Chris mit Hunden"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
 
@@ -269,6 +285,14 @@
           </header>
           <div class="grid-2">
             <figure class="quote-card">
+              <img
+                class="quote-card__media"
+                src="assets/images/original/stimmen-1.jpg"
+                width="112"
+                height="112"
+                alt=""
+                loading="lazy"
+              />
               <blockquote>
                 „Endlich Auslastung mit Struktur — unser Hund kommt ruhiger nach Hause, nicht nur
                 müde vom Rennen.“
@@ -279,6 +303,14 @@
               >
             </figure>
             <figure class="quote-card">
+              <img
+                class="quote-card__media"
+                src="assets/images/original/stimmen-2.jpg"
+                width="112"
+                height="112"
+                alt=""
+                loading="lazy"
+              />
               <blockquote>
                 „Trail und Dogwalker greifen ineinander. Klare Ansagen, faire Gruppen, kein
                 Chaos am Band.“
