@@ -2,7 +2,6 @@
   const body = document.body;
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
-  const header = document.querySelector("[data-header]");
   const yearEls = document.querySelectorAll("[data-year]");
   yearEls.forEach((el) => {
     el.textContent = String(new Date().getFullYear());
@@ -15,10 +14,17 @@
 
   let lastFocus = null;
 
+  function isDesktopNav() {
+    return window.matchMedia("(min-width: 768px)").matches;
+  }
+
   function getNavFocusable() {
-    return Array.from(nav.querySelectorAll(focusableSelector)).filter(
-      (el) => !el.hasAttribute("disabled") && el.offsetParent !== null
-    );
+    return Array.from(nav.querySelectorAll(focusableSelector)).filter((el) => {
+      if (el.hasAttribute("disabled")) return false;
+      // Skip non-interactive sub labels on mobile
+      if (el.matches("[data-sub-toggle]") && !isDesktopNav()) return false;
+      return el.offsetParent !== null;
+    });
   }
 
   /** While open: toggle (close control) + nav items so Tab can reach "Menü schließen". */
@@ -34,6 +40,8 @@
     toggle.setAttribute("aria-expanded", "true");
     const label = toggle.querySelector(".visually-hidden");
     if (label) label.textContent = "Menü schließen";
+    // Mobile: nested menus always visible
+    revealAllSubmenus();
     const items = getNavFocusable();
     if (items[0]) items[0].focus();
   }
@@ -43,18 +51,37 @@
     toggle.setAttribute("aria-expanded", "false");
     const label = toggle.querySelector(".visually-hidden");
     if (label) label.textContent = "Menü öffnen";
-    // close submenus
-    nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {
-      btn.setAttribute("aria-expanded", "false");
-      const id = btn.getAttribute("aria-controls");
-      const panel = id ? document.getElementById(id) : null;
-      if (panel) panel.hidden = true;
-    });
     if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
   }
 
   function isOpen() {
     return body.classList.contains("nav-open");
+  }
+
+  function revealAllSubmenus() {
+    nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {
+      btn.setAttribute("aria-expanded", "true");
+      const id = btn.getAttribute("aria-controls");
+      const panel = id ? document.getElementById(id) : null;
+      if (panel) {
+        panel.hidden = false;
+        panel.removeAttribute("hidden");
+      }
+    });
+  }
+
+  function prepareSubmenusForViewport() {
+    // Always keep panels available; CSS handles hover (desktop) vs always-open (mobile)
+    revealAllSubmenus();
+    nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {
+      if (isDesktopNav()) {
+        btn.setAttribute("tabindex", "0");
+        btn.removeAttribute("aria-disabled");
+      } else {
+        btn.setAttribute("tabindex", "-1");
+        btn.setAttribute("aria-disabled", "true");
+      }
+    });
   }
 
   toggle.addEventListener("click", () => {
@@ -82,22 +109,11 @@
     }
   });
 
-  // submenu toggles
+  // Submenus open via CSS hover/focus-within on desktop; no click-to-open.
+  // Keep buttons from stealing clicks / toggling hidden state.
   nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const expanded = btn.getAttribute("aria-expanded") === "true";
-      const id = btn.getAttribute("aria-controls");
-      const panel = id ? document.getElementById(id) : null;
-      // close siblings
-      nav.querySelectorAll("[data-sub-toggle]").forEach((other) => {
-        if (other === btn) return;
-        other.setAttribute("aria-expanded", "false");
-        const oid = other.getAttribute("aria-controls");
-        const op = oid ? document.getElementById(oid) : null;
-        if (op) op.hidden = true;
-      });
-      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
-      if (panel) panel.hidden = expanded;
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
     });
   });
 
@@ -117,14 +133,6 @@
     }
   });
 
-  // desktop: close submenus on outside click
-  document.addEventListener("click", (e) => {
-    if (!header || header.contains(e.target)) return;
-    nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {
-      btn.setAttribute("aria-expanded", "false");
-      const id = btn.getAttribute("aria-controls");
-      const panel = id ? document.getElementById(id) : null;
-      if (panel) panel.hidden = true;
-    });
-  });
+  prepareSubmenusForViewport();
+  window.addEventListener("resize", prepareSubmenusForViewport);
 })();
