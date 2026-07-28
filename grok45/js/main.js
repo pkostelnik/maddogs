@@ -9,6 +9,11 @@
 
   if (!toggle || !nav) return;
 
+  const header = document.querySelector("[data-header]");
+  const headerInner =
+    (header && header.querySelector(".site-header__inner")) ||
+    (toggle && toggle.parentElement);
+
   // Backdrop for mobile burger drawer (created once)
   let backdrop = document.querySelector("[data-nav-backdrop]");
   if (!backdrop) {
@@ -16,7 +21,26 @@
     backdrop.className = "nav-backdrop";
     backdrop.setAttribute("data-nav-backdrop", "");
     backdrop.hidden = true;
-    document.body.appendChild(backdrop);
+    body.appendChild(backdrop);
+  }
+
+  /**
+   * Mobile: nav under <body> so position:fixed is viewport-based.
+   * Desktop: nav back inside the header flex row.
+   */
+  function placeNav() {
+    if (isDesktopNav()) {
+      if (headerInner && nav.parentElement !== headerInner) {
+        // After toggle when present, else end of header inner
+        if (toggle && toggle.parentElement === headerInner) {
+          headerInner.insertBefore(nav, toggle.nextSibling);
+        } else {
+          headerInner.appendChild(nav);
+        }
+      }
+    } else if (nav.parentElement !== body) {
+      body.appendChild(nav);
+    }
   }
 
   const focusableSelector =
@@ -31,9 +55,14 @@
   function getNavFocusable() {
     return Array.from(nav.querySelectorAll(focusableSelector)).filter((el) => {
       if (el.hasAttribute("disabled")) return false;
+      if (el.getAttribute("aria-disabled") === "true") return false;
       // Skip non-interactive sub labels on mobile
       if (el.matches("[data-sub-toggle]") && !isDesktopNav()) return false;
-      return el.offsetParent !== null;
+      // offsetParent is null for position:fixed — use client rects instead
+      const style = window.getComputedStyle(el);
+      if (style.visibility === "hidden" || style.display === "none") return false;
+      const r = el.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
     });
   }
 
@@ -45,6 +74,8 @@
   }
 
   function openNav() {
+    if (isDesktopNav()) return;
+    placeNav();
     lastFocus = document.activeElement;
     body.classList.add("nav-open");
     toggle.setAttribute("aria-expanded", "true");
@@ -87,6 +118,7 @@
   }
 
   function prepareSubmenusForViewport() {
+    placeNav();
     // Always keep panels available; CSS handles hover (desktop) vs always-open (mobile)
     revealAllSubmenus();
     nav.querySelectorAll("[data-sub-toggle]").forEach((btn) => {

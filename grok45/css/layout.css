@@ -28,9 +28,8 @@
   top: 0;
   z-index: var(--z-header);
   height: var(--header-h);
-  background: color-mix(in srgb, var(--color-bg) 92%, var(--color-surface));
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  /* Solid bg — avoid backdrop-filter here: it traps position:fixed nav inside the header */
+  background: color-mix(in srgb, var(--color-bg) 96%, var(--color-surface));
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -166,14 +165,16 @@ body.nav-open .nav-backdrop {
   pointer-events: auto;
 }
 
-/* Site nav — mobile burger drawer */
+/* Site nav — mobile burger drawer (must be under body; JS reparents out of header) */
 .site-nav {
   position: fixed;
   top: var(--header-h);
   right: 0;
   bottom: 0;
   left: auto;
-  width: min(100%, 22rem);
+  width: min(100vw - 2.5rem, 22rem);
+  height: calc(100dvh - var(--header-h));
+  max-height: calc(100vh - var(--header-h));
   z-index: var(--z-nav);
   display: flex;
   flex-direction: column;
@@ -183,10 +184,12 @@ body.nav-open .nav-backdrop {
   border-left: 1px solid var(--color-border);
   border-top: 1px solid var(--color-border);
   box-shadow: -12px 0 40px rgba(58, 42, 32, 0.12);
+  overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  transform: translateX(105%);
+  transform: translateX(110%);
   visibility: hidden;
+  pointer-events: none;
   transition:
     transform var(--dur) var(--ease),
     visibility var(--dur) var(--ease);
@@ -199,6 +202,7 @@ body.nav-open {
 body.nav-open .site-nav {
   transform: translateX(0);
   visibility: visible;
+  pointer-events: auto;
 }
 
 body.lightbox-open {
@@ -480,6 +484,8 @@ body.lightbox-open {
     bottom: auto;
     left: auto;
     width: auto;
+    height: auto;
+    max-height: none;
     flex-direction: row;
     align-items: center;
     gap: var(--space-1);
@@ -490,6 +496,7 @@ body.lightbox-open {
     overflow: visible;
     transform: none;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .site-nav > ul {
