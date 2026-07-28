@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutz | Mad Dogs Germany</title>
+    <meta
+      name="description"
+      content="Datenschutzerklärung (Prototyp) von Mad Dogs Germany — Hinweise zu Kontaktkanälen und zum Demo-Kontaktformular."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <style>
+      .legal-doc {
+        max-width: 42rem;
+      }
+      .legal-doc h2 {
+        margin-top: var(--space-8);
+        margin-bottom: var(--space-3);
+        font-size: var(--text-h3);
+      }
+      .legal-doc h2:first-child {
+        margin-top: 0;
+      }
+      .legal-doc p,
+      .legal-doc li {
+        color: var(--color-text-muted, var(--color-text));
+        line-height: 1.7;
+      }
+      .legal-doc ul {
+        padding-left: 1.25rem;
+      }
+      .legal-doc li + li {
+        margin-top: 0.35rem;
+      }
+      .legal-todo {
+        display: inline;
+        padding: 0.1em 0.35em;
+        border-radius: var(--radius-sm);
+        background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+        color: var(--color-text);
+        font-weight: 600;
+        font-size: 0.95em;
+      }
+      .legal-note {
+        margin-top: var(--space-6);
+        padding: var(--space-4);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        background: var(--color-surface);
+        font-size: var(--text-small);
+      }
+      .legal-callout {
+        margin: var(--space-4) 0;
+        padding: var(--space-4);
+        border-left: 3px solid var(--color-accent);
+        background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header" data-header>
+      <div class="site-header__inner container">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true">MD</span>
+          <span class="logo__text">Mad Dogs <span>Germany</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menü öffnen</span>
+        </button>
+        <nav id="site-nav" class="site-nav" data-nav aria-label="Hauptnavigation">
+          <ul class="site-nav__list">
+            <li><a href="index.html" data-nav-link>Start</a></li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-services"
+              >
+                Services
+              </button>
+              <ul id="sub-services" class="sub-menu" data-sub-menu hidden>
+                <li><a href="dogwalker.html">Dogwalker</a></li>
+                <li><a href="trail.html">Man / Pet Trail</a></li>
+                <li><a href="spuerhunde.html">Spürhunde</a></li>
+                <li><a href="sporthunde.html">Sporthunde</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-shop"
+              >
+                Shop
+              </button>
+              <ul id="sub-shop" class="sub-menu" data-sub-menu hidden>
+                <li><a href="shop.html">Shop-Übersicht</a></li>
+                <li><a href="reico.html">Reico Hundefutter</a></li>
+                <li><a href="bekleidung.html">Bekleidung</a></li>
+              </ul>
+            </li>
+            <li><a href="ueber-uns.html" data-nav-link>Über uns</a></li>
+            <li><a href="stimmen.html" data-nav-link>Stimmen</a></li>
+            <li><a class="btn btn--primary btn--nav" href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <div class="site-nav__utils">
+            <a href="tel:+491733649143">0173 3649143</a>
+            <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/mad_dogs_germany/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="hero__eyebrow">Rechtliches</p>
+          <h1>Datenschutz</h1>
+          <p class="lead">
+            Informationen zur Verarbeitung personenbezogener Daten im Rahmen dieses
+            Website-Prototyps.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container legal-doc">
+          <div class="legal-callout">
+            <p style="margin: 0">
+              <strong>Wichtiger Prototyp-Hinweis:</strong> Das
+              <a href="kontakt.html">Kontaktformular</a> auf dieser Website ist eine
+              <strong>Demo</strong>. Es überträgt in diesem Prototyp
+              <strong>keine Daten an einen Server</strong>, speichert nichts serverseitig und
+              versendet keine E-Mails. Für echte Anfragen bitte Telefon, WhatsApp oder E-Mail
+              nutzen.
+            </p>
+          </div>
+
+          <h2>1. Verantwortlicher</h2>
+          <p><strong>Mad Dogs Germany</strong></p>
+          <p>
+            <strong>Anschrift:</strong>
+            <span class="legal-todo">[Straße/PLZ Ort — vom Betreiber ergänzen]</span>
+          </p>
+          <ul>
+            <li>
+              Telefon:
+              <a href="tel:+491733649143">0173 3649143</a>
+            </li>
+            <li>
+              E-Mail:
+              <a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a>
+            </li>
+            <li>
+              WhatsApp:
+              <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+                >wa.me/491733649143</a
+              >
+            </li>
+          </ul>
+          <p>
+            Weitere Angaben: <a href="impressum.html">Impressum</a>.
+          </p>
+
+          <h2>2. Zwecke der Verarbeitung</h2>
+          <p>Personenbezogene Daten können anfallen, wenn Sie uns aktiv kontaktieren:</p>
+          <ul>
+            <li>
+              <strong>Direkte Kanäle</strong> (Telefon, WhatsApp, E-Mail, Instagram): zur
+              Beantwortung von Anfragen, Terminabstimmung und Leistungserbringung. Die
+              Verarbeitung richtet sich nach den jeweiligen Anbietern und der Art Ihrer
+              Nachricht (Art. 6 Abs. 1 lit. b und/oder f DSGVO bzw. Einwilligung, soweit
+              erforderlich).
+            </li>
+            <li>
+              <strong>Kontaktformular (Demo):</strong> dient nur der Darstellung der
+              Benutzeroberfläche. In diesem Prototyp findet
+              <strong>keine Übermittlung</strong>, keine Server-Speicherung und kein Versand
+              statt. Es werden keine Formularinhalte an Mad Dogs Germany übermittelt.
+            </li>
+          </ul>
+
+          <h2>3. Hosting und technische Bereitstellung</h2>
+          <p>
+            Diese statischen Seiten können über einen Hosting- oder Preview-Dienst ausgeliefert
+            werden. Dabei können technisch notwendige Zugriffsdaten (z. B. IP-Adresse,
+            Zeitpunkt, User-Agent) in Server- oder CDN-Logs anfallen. Details hängen vom
+            gewählten Host ab:
+            <span class="legal-todo">[Hoster / AV-Vertrag — vom Betreiber ergänzen]</span>.
+          </p>
+          <p>
+            Eingebundene Drittdienste auf der Seite können eigene Datenverarbeitungen
+            vornehmen, z. B.:
+          </p>
+          <ul>
+            <li>Schriftarten über Google Fonts (Verbindung zu Google-Servern beim Laden),</li>
+            <li>externe Links zu WhatsApp, Instagram oder Shop-Partnern (erst bei Klick).</li>
+          </ul>
+
+          <h2>4. Speicherdauer</h2>
+          <p>
+            Bei echten Kontaktaufnahmen speichern wir Anfragedaten nur so lange, wie es für die
+            Bearbeitung und gesetzliche Aufbewahrungspflichten nötig ist. Im Prototyp-Formular
+            entstehen keine gespeicherten Übermittlungsdaten.
+          </p>
+
+          <h2>5. Rechte der Betroffenen</h2>
+          <p>Sie haben im Rahmen der DSGVO insbesondere das Recht auf:</p>
+          <ul>
+            <li>Auskunft über gespeicherte Daten (Art. 15),</li>
+            <li>Berichtigung (Art. 16),</li>
+            <li>Löschung (Art. 17),</li>
+            <li>Einschränkung der Verarbeitung (Art. 18),</li>
+            <li>Datenübertragbarkeit (Art. 20),</li>
+            <li>Widerspruch gegen Verarbeitungen auf Basis berechtigter Interessen (Art. 21),</li>
+            <li>Beschwerde bei einer Aufsichtsbehörde.</li>
+          </ul>
+          <p>
+            Zur Ausübung Ihrer Rechte genügt eine Nachricht an
+            <a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a> oder über die
+            Kanäle im <a href="impressum.html">Impressum</a>.
+          </p>
+
+          <h2>6. Kontakt zum Datenschutz</h2>
+          <p>
+            Fragen zum Datenschutz:
+            <a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a> ·
+            <a href="tel:+491733649143">0173 3649143</a> ·
+            <a href="kontakt.html">Kontaktseite</a>
+          </p>
+
+          <p class="legal-note">
+            <strong>Hinweis:</strong> Diese Erklärung ist für den statischen Relaunch-Prototyp
+            ausgelegt. Vor Go-Live Hoster, Analyse-Tools, Cookie-Banner und vollständige
+            Rechtsgrundlagen durch den Betreiber ergänzen und prüfen lassen.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid container">
+        <div>
+          <p class="footer-brand">Mad Dogs Germany</p>
+          <p>
+            Professionelle Hundeauslastung, Trail &amp; Ausrüstung — Niederkassel und Umgebung.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="dogwalker.html">Dogwalker</a></li>
+            <li><a href="trail.html">Man / Pet Trail</a></li>
+            <li><a href="spuerhunde.html">Spürhunde</a></li>
+            <li><a href="sporthunde.html">Sporthunde</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul>
+            <li><a href="shop.html">Shop-Übersicht</a></li>
+            <li><a href="reico.html">Reico</a></li>
+            <li><a href="bekleidung.html">Bekleidung</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Kontakt</p>
+          <ul>
+            <li><a href="tel:+491733649143">0173 3649143</a></li>
+            <li><a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a></li>
+            <li>
+              <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom container">
+        <nav aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="agb.html">AGB</a>
+          <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+        </nav>
+        <p>© <span data-year></span> Mad Dogs Germany. Prototyp-Relaunch.</p>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
