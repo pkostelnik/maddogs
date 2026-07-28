@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galerie | Mad Dogs Germany</title>
+    <meta
+      name="description"
+      content="Eindrücke aus dem Mad Dogs Alltag: Dogwalker-Runden, Trail, Spürarbeit und Sport — Galerie mit Lightbox."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <style>
+      .gallery-grid {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      @media (min-width: 1024px) {
+        .gallery-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .gallery-item {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: var(--radius-md);
+        text-align: left;
+        color: inherit;
+        font: inherit;
+      }
+      .gallery-item:focus-visible {
+        outline: none;
+        box-shadow: var(--focus-ring);
+      }
+      .gallery-item .media-ph {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+      .gallery-item__caption {
+        display: block;
+        margin-top: var(--space-2);
+        font-size: var(--text-small);
+        font-weight: 600;
+        color: var(--color-text-muted);
+      }
+      .lightbox__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header" data-header>
+      <div class="site-header__inner container">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true">MD</span>
+          <span class="logo__text">Mad Dogs <span>Germany</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menü öffnen</span>
+        </button>
+        <nav id="site-nav" class="site-nav" data-nav aria-label="Hauptnavigation">
+          <ul class="site-nav__list">
+            <li><a href="index.html" data-nav-link>Start</a></li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-services"
+              >
+                Services
+              </button>
+              <ul id="sub-services" class="sub-menu" data-sub-menu hidden>
+                <li><a href="dogwalker.html">Dogwalker</a></li>
+                <li><a href="trail.html">Man / Pet Trail</a></li>
+                <li><a href="spuerhunde.html">Spürhunde</a></li>
+                <li><a href="sporthunde.html">Sporthunde</a></li>
+                <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <button
+                type="button"
+                class="sub-toggle"
+                data-sub-toggle
+                aria-expanded="false"
+                aria-controls="sub-shop"
+              >
+                Shop
+              </button>
+              <ul id="sub-shop" class="sub-menu" data-sub-menu hidden>
+                <li><a href="shop.html">Shop-Übersicht</a></li>
+                <li><a href="reico.html">Reico Hundefutter</a></li>
+                <li><a href="bekleidung.html">Bekleidung</a></li>
+              </ul>
+            </li>
+            <li><a href="ueber-uns.html" data-nav-link>Über uns</a></li>
+            <li><a href="stimmen.html" data-nav-link>Stimmen</a></li>
+            <li><a class="btn btn--primary btn--nav" href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <div class="site-nav__utils">
+            <a href="tel:+491733649143">0173 3649143</a>
+            <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/mad_dogs_germany/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="hero__eyebrow">Eindrücke · Niederkassel &amp; Umgebung</p>
+          <h1>Galerie</h1>
+          <p class="lead">
+            Momente aus dem Dogwalker-Alltag, Trail und Training — strukturierte Auslastung statt
+            Show. Platzhalter-Motive; echte Fotos folgen.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="dogwalker.html">Dogwalker-Service</a>
+            <a class="btn btn--secondary" href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="gallery-heading">
+        <div class="container">
+          <header class="section__header">
+            <h2 id="gallery-heading">Aus dem Alltag</h2>
+            <p class="lead">
+              Tippe oder klicke ein Bild für die Großansicht. Mit Pfeiltasten blättern, Escape
+              schließt.
+            </p>
+          </header>
+          <ul class="gallery-grid">
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-1.svg"
+                data-alt="Waldspaziergang mit Hund"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-1.svg')"
+                  data-label="Wald"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Waldspaziergang</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-2.svg"
+                data-alt="Man / Pet Trail Training"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-2.svg')"
+                  data-label="Trail"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Trail-Training</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-3.svg"
+                data-alt="Gruppenrunde mit mehreren Hunden"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-3.svg')"
+                  data-label="Gruppe"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Gruppenrunde</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-4.svg"
+                data-alt="Spürhunde-Arbeit"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-4.svg')"
+                  data-label="Spür"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Spürarbeit</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-5.svg"
+                data-alt="Leinenführung im Training"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-5.svg')"
+                  data-label="Leine"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Leinenführung</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-6.svg"
+                data-alt="Feldrunde im Freien"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-6.svg')"
+                  data-label="Feld"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Feldrunde</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-7.svg"
+                data-alt="Sportplatz-Training"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-7.svg')"
+                  data-label="Sport"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Sportplatz</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="gallery-item"
+                data-gallery-item
+                data-full="assets/images/placeholders/gallery-8.svg"
+                data-alt="Pause am Wasser"
+              >
+                <span
+                  class="media-ph"
+                  style="background-image: url('assets/images/placeholders/gallery-8.svg')"
+                  data-label="Wasser"
+                  aria-hidden="true"
+                ></span>
+                <span class="gallery-item__caption">Pause am Wasser</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-labelledby="cta-heading">
+        <div class="container cta-band__inner">
+          <div>
+            <h2 id="cta-heading">Neugierig geworden?</h2>
+            <p class="lead" style="margin: 0">
+              Dogwalker buchen oder kurz per WhatsApp melden — Niederkassel und Umgebung.
+            </p>
+          </div>
+          <div class="hero__actions" style="margin-top: 0">
+            <a class="btn btn--primary" href="dogwalker.html">Zum Dogwalker</a>
+            <a class="btn btn--secondary" href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightbox-title"
+        hidden
+      >
+        <div class="lightbox__panel">
+          <button
+            type="button"
+            class="btn btn--ghost lightbox__close"
+            data-lightbox-close
+            aria-label="Schließen"
+          >
+            Schließen
+          </button>
+          <div class="lightbox__toolbar">
+            <h2 id="lightbox-title" class="lightbox__title">Galeriebild</h2>
+            <div class="lightbox__nav">
+              <button type="button" class="btn btn--secondary" data-lightbox-prev>
+                Zurück
+              </button>
+              <button type="button" class="btn btn--secondary" data-lightbox-next>
+                Weiter
+              </button>
+            </div>
+          </div>
+          <figure class="lightbox__figure">
+            <img data-lightbox-img src="" alt="" width="640" height="400" />
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid container">
+        <div>
+          <p class="footer-brand">Mad Dogs Germany</p>
+          <p>
+            Professionelle Hundeauslastung, Trail &amp; Ausrüstung — Niederkassel und Umgebung.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Services</p>
+          <ul>
+            <li><a href="dogwalker.html">Dogwalker</a></li>
+            <li><a href="trail.html">Man / Pet Trail</a></li>
+            <li><a href="spuerhunde.html">Spürhunde</a></li>
+            <li><a href="sporthunde.html">Sporthunde</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul>
+            <li><a href="shop.html">Shop-Übersicht</a></li>
+            <li><a href="reico.html">Reico</a></li>
+            <li><a href="bekleidung.html">Bekleidung</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Kontakt</p>
+          <ul>
+            <li><a href="tel:+491733649143">0173 3649143</a></li>
+            <li><a href="mailto:info@mad-dogs-germany.de">info@mad-dogs-germany.de</a></li>
+            <li>
+              <a href="https://wa.me/491733649143" rel="noopener noreferrer" target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom container">
+        <nav aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="agb.html">AGB</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p>© <span data-year></span> Mad Dogs Germany. Prototyp-Relaunch.</p>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+  </body>
+</html>

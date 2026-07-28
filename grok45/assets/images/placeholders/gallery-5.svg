@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Leinenführung">
+  <rect width="640" height="400" fill="#0f141c"/>
+  <path d="M0 340 L640 300 L640 400 L0 400 Z" fill="#1b2130"/>
+  <circle cx="220" cy="200" r="28" fill="#e8ecf4"/>
+  <path d="M200 230 L190 310 M240 230 L250 310 M210 260 L250 260" stroke="#e8ecf4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M250 250 Q360 200 450 280" fill="none" stroke="#c8a24a" stroke-width="3"/>
+  <ellipse cx="470" cy="300" rx="38" ry="14" fill="#243044"/>
+  <path d="M445 292 Q470 245 500 290" fill="none" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="498" cy="250" r="14" fill="#94a3b8"/>
+</svg>

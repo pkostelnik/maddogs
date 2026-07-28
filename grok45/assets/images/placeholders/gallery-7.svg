@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Sportplatz">
+  <rect width="640" height="400" fill="#0f141c"/>
+  <rect x="60" y="60" width="520" height="280" rx="8" fill="#152018" stroke="#2d6a4f" stroke-width="2"/>
+  <line x1="320" y1="60" x2="320" y2="340" stroke="#2d6a4f" stroke-width="2" opacity="0.5"/>
+  <circle cx="320" cy="200" r="40" fill="none" stroke="#2d6a4f" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="250" cy="240" rx="34" ry="12" fill="#1b2130"/>
+  <path d="M230 235 Q250 200 275 232" fill="none" stroke="#c8a24a" stroke-width="7"/>
+  <circle cx="272" cy="205" r="11" fill="#c8a24a"/>
+  <circle cx="400" cy="180" r="18" fill="#e8ecf4"/>
+  <path d="M385 200 L380 260 M415 200 L420 260" stroke="#e8ecf4" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Trail-Training">
+  <rect width="640" height="400" fill="#121820"/>
+  <path d="M0 320 Q160 260 320 300 T640 280 L640 400 L0 400 Z" fill="#1b2130"/>
+  <path d="M40 310 Q200 250 360 290 T620 270" fill="none" stroke="#c8a24a" stroke-width="4" stroke-dasharray="12 10"/>
+  <circle cx="180" cy="250" r="22" fill="#e8ecf4"/>
+  <path d="M160 270 L150 320 M200 270 L220 320 M170 290 L210 290" stroke="#e8ecf4" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="420" cy="300" rx="36" ry="14" fill="#243044"/>
+  <path d="M400 295 Q420 250 450 292" fill="none" stroke="#94a3b8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="448" cy="255" r="12" fill="#94a3b8"/>
+</svg>

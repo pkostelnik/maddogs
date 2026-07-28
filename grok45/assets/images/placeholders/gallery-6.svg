@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Feldrunde">
+  <rect width="640" height="400" fill="#121a14"/>
+  <rect y="220" width="640" height="180" fill="#1b2a20"/>
+  <path d="M0 220 Q160 180 320 210 T640 190 L640 220 Z" fill="#243528"/>
+  <circle cx="90" cy="80" r="28" fill="#c8a24a" opacity="0.7"/>
+  <ellipse cx="300" cy="250" rx="50" ry="16" fill="#1b2130"/>
+  <path d="M270 245 Q300 200 340 242" fill="none" stroke="#e8ecf4" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="335" cy="205" r="15" fill="#e8ecf4"/>
+  <path d="M100 260 L140 200 L180 260" fill="#2d6a4f" opacity="0.5"/>
+  <path d="M480 250 L520 190 L560 250" fill="#1b4332" opacity="0.5"/>
+</svg>

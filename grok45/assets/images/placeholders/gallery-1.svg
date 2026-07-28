@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Waldspaziergang">
+  <rect width="640" height="400" fill="#0f141c"/>
+  <rect y="280" width="640" height="120" fill="#1b2130"/>
+  <circle cx="520" cy="70" r="36" fill="#c8a24a" opacity="0.85"/>
+  <path d="M80 300 L120 160 L160 300 Z" fill="#2d6a4f"/>
+  <path d="M150 300 L200 120 L250 300 Z" fill="#1b4332"/>
+  <path d="M240 300 L290 150 L340 300 Z" fill="#2d6a4f"/>
+  <ellipse cx="300" cy="310" rx="40" ry="18" fill="#243044"/>
+  <path d="M270 300 Q300 240 340 295" fill="none" stroke="#e8ecf4" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="335" cy="250" r="14" fill="#e8ecf4"/>
+</svg>
