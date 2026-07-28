@@ -1,4 +1,4 @@
-/* Layout — mobile-first, Outdoor Athletic dark UI */
+/* Layout — mobile-first, Warm Field Day */
 
 /* Skip link */
 .skip-link {
@@ -28,9 +28,9 @@
   top: 0;
   z-index: var(--z-header);
   height: var(--header-h);
-  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--color-bg) 92%, var(--color-surface));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -281,6 +281,9 @@ body.lightbox-open {
   position: relative;
   padding-block: var(--space-8) var(--space-9);
   overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 100% 0%, color-mix(in srgb, var(--color-support-soft) 55%, transparent), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, color-mix(in srgb, var(--color-surface-2) 80%, transparent), transparent 55%);
 }
 
 .hero__inner {
@@ -292,7 +295,7 @@ body.lightbox-open {
 .hero__eyebrow {
   display: inline-block;
   margin-bottom: var(--space-3);
-  color: var(--color-accent);
+  color: var(--color-support);
   font-size: var(--text-small);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -319,8 +322,8 @@ body.lightbox-open {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--color-surface) 80%, transparent) 0%,
-      transparent 100%
+      color-mix(in srgb, var(--color-surface) 88%, var(--color-surface-2)) 0%,
+      var(--color-bg) 100%
     );
 }
 
@@ -339,7 +342,7 @@ body.lightbox-open {
 
 /* Footer */
 .site-footer {
-  background: var(--color-surface);
+  background: color-mix(in srgb, var(--color-surface-2) 55%, var(--color-surface));
   border-top: 1px solid var(--color-border);
   padding-block: var(--space-8) var(--space-6);
   margin-top: auto;

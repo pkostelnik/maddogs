@@ -1,16 +1,18 @@
+/* Warm Field Day — light, local, trusted dog-work brand */
 :root {
-  --color-bg: #0b0d10;
-  --color-surface: #141820;
-  --color-surface-2: #1b2130;
-  --color-border: rgba(232, 236, 244, 0.12);
-  --color-text: #f2f4f8;
-  --color-text-muted: #a7b0c0;
-  --color-accent: #f0a202;
-  --color-accent-hover: #ffb623;
-  --color-accent-ink: #1a1200;
-  --color-support: #5f7a5a;
-  --color-danger: #ff6b6b;
-  --color-success: #3ddc97;
+  --color-bg: #f7f3ec;
+  --color-surface: #ffffff;
+  --color-surface-2: #efe8dc;
+  --color-border: rgba(58, 42, 32, 0.12);
+  --color-text: #2a211c;
+  --color-text-muted: #5c5048;
+  --color-accent: #c45c26;
+  --color-accent-hover: #a84a1c;
+  --color-accent-ink: #fffaf5;
+  --color-support: #5f7348;
+  --color-support-soft: #e4ebda;
+  --color-danger: #b42318;
+  --color-success: #2f6b3a;
   --font-display: "Syne", system-ui, sans-serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
   --text-hero: clamp(2.4rem, 6vw, 4.25rem);
@@ -29,10 +31,10 @@
   --space-7: 3rem;
   --space-8: 4rem;
   --space-9: 6rem;
-  --radius-sm: 0.375rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --shadow-soft: 0 14px 40px rgba(58, 42, 32, 0.1);
   --content-max: 72rem;
   --header-h: 4.25rem;
   --focus-ring: 0 0 0 3px var(--color-bg), 0 0 0 6px var(--color-accent);
