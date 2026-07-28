@@ -63,6 +63,19 @@
   background: color-mix(in srgb, var(--color-accent) 10%, transparent);
 }
 
+.btn--nav {
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  font-size: var(--text-small);
+}
+
+@media (min-width: 768px) {
+  .site-nav .btn--nav {
+    min-height: 36px;
+    padding: 0.4rem 0.85rem;
+  }
+}
+
 /* Cards */
 .card {
   background: var(--color-surface);
