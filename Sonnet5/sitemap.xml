@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.mad-dogs-germany.de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/ueber-mich/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/ueber-mich/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/about/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/ueber-mich/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/about/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/training/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/training/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/training/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/training/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/training/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/training/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/dogwalker-service/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/dogwalker-service/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/dogwalker-service/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/dogwalker-service/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/dogwalker-service/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/dogwalker-service/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/shop/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/shop/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/kundenstimmen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/kundenstimmen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/testimonials/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/testimonials/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/kundenstimmen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/testimonials/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/contact/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/contact/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/impressum/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/legal-notice/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/legal-notice/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/legal-notice/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/datenschutz/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://www.mad-dogs-germany.de/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mad-dogs-germany.de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mad-dogs-germany.de/en/privacy/"/>
+  </url>
+</urlset>

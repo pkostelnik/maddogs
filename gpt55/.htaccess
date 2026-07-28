@@ -1,0 +1,13 @@
+Redirect 301 /man-pet-trail/ /training/#mantrailing
+Redirect 301 /spuerhunde/ /training/#spuerhunde
+Redirect 301 /sporthunde/ /training/#hundesport
+Redirect 301 /reico-hundefutter/ /shop/#reico
+Redirect 301 /mad-dogs-shop-/ /shop/
+Redirect 301 /das-sagen-unsere-kunden/ /kundenstimmen/
+Redirect 301 /dogwalker-service/kontakt/ /kontakt/
+Redirect 301 /dogwalker-service/impressum/ /impressum/
+Redirect 301 /dogwalker-service/datenschutzerklaerung/ /datenschutz/
+Redirect 301 /dogwalker-service/galerie/ /dogwalker-service/#galerie
+Redirect 301 /dogwalker-service/agb/ /impressum/
+
+ErrorDocument 404 /404.html
