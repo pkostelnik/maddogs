@@ -188,7 +188,7 @@ body.lightbox-open {
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Sub-menu — mobile nested */
+/* Sub-menu — mobile nested (JS: hidden + aria-expanded; no hover open) */
 .sub-menu {
   list-style: none;
   margin: 0 0 var(--space-3);
@@ -196,13 +196,16 @@ body.lightbox-open {
   display: none;
 }
 
-.site-nav li.is-open > .sub-menu,
 .site-nav details[open] > .sub-menu,
-.has-sub:focus-within > .sub-menu,
-.has-sub:hover > .sub-menu {
+.has-sub:has([data-sub-toggle][aria-expanded="true"]) > .sub-menu,
+.site-nav li.is-open > .sub-menu {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+}
+
+.sub-menu[hidden] {
+  display: none !important;
 }
 
 .sub-menu a {
@@ -402,10 +405,12 @@ body.lightbox-open {
     z-index: var(--z-nav);
   }
 
+  /* Desktop: hover/focus dropdown (override [hidden] for pointer UX) */
   .has-sub:hover > .sub-menu,
   .has-sub:focus-within > .sub-menu,
+  .has-sub:has([data-sub-toggle][aria-expanded="true"]) > .sub-menu,
   .site-nav li.is-open > .sub-menu {
-    display: flex;
+    display: flex !important;
   }
 
   .sub-menu a {
